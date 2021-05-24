@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "257195805455",
+    "project_id": "cem-restaurant-518f9",
+    "storage_bucket": "cem-restaurant-518f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257195805455:android:abe76279858ff9df7ccc7a",
+        "android_client_info": {
+          "package_name": "com.example.smileyrestaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "257195805455-04rb1um8amaq3gdpo9u5qiugtnrjcq16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIRutEyTeqdw7wEBFgjto-GpKOKY1SmYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "257195805455-04rb1um8amaq3gdpo9u5qiugtnrjcq16.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
