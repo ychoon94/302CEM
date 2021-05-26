@@ -114,6 +114,6 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void homepage(View view) {
-        Intent intent = new
+        //Intent intent = new
     }
 }
