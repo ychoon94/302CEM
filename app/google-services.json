@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "257195805455",
-    "project_id": "cem-restaurant-518f9",
-    "storage_bucket": "cem-restaurant-518f9.appspot.com"
+    "project_number": "855061189194",
+    "project_id": "smiley-restaurant",
+    "storage_bucket": "smiley-restaurant.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:257195805455:android:abe76279858ff9df7ccc7a",
+        "mobilesdk_app_id": "1:855061189194:android:35138d55006f5fcf1c4cb3",
         "android_client_info": {
           "package_name": "com.example.smileyrestaurant"
         }
       },
       "oauth_client": [
         {
-          "client_id": "257195805455-04rb1um8amaq3gdpo9u5qiugtnrjcq16.apps.googleusercontent.com",
+          "client_id": "855061189194-18qafjelg7jrd1d9ce1bg3jg83t6kvc5.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCIRutEyTeqdw7wEBFgjto-GpKOKY1SmYo"
+          "current_key": "AIzaSyAAG00evIgeN9jEGEpxnT8thFjchgF0u-A"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "257195805455-04rb1um8amaq3gdpo9u5qiugtnrjcq16.apps.googleusercontent.com",
+              "client_id": "855061189194-18qafjelg7jrd1d9ce1bg3jg83t6kvc5.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
