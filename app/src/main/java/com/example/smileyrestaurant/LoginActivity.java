@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -110,6 +111,9 @@ public class LoginActivity extends AppCompatActivity {
 
     public void loginAccount(View view) {
         signIn(mActivityLoginBinding.editTextUsername.getText().toString(), mActivityLoginBinding.editTextPassword.getText().toString());
+    }
 
+    public void homepage(View view) {
+        Intent intent = new
     }
 }
