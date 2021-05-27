@@ -14,8 +14,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="212dp"
-            android:textSize="66dp"
-            android:text="SMile HaPPy"
+            android:textSize="66sp"
+            android:text="@string/textview_smile_happy"
             app:layout_constraintBottom_toTopOf="@+id/editText_username"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -25,8 +25,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
-            android:text="Restaurant"
-            android:textSize="36dp"
+            android:text="@string/textview_restaurant"
+            android:textSize="36sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/title1" />

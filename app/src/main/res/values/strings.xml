@@ -12,4 +12,9 @@
     <string name="login_button">Login</string>
     <string name="edittext_password_hint">Password</string>
     <string name="edittext_username_hint">Email</string>
+    <string name="button_add_order">Add Order</string>
+    <string name="button_kitchen">Kitchen</string>
+    <string name="textview_smile_happy_restaurant">SMile HaPPy Restaurant</string>
+    <string name="textview_smile_happy">SMile HaPPy</string>
+    <string name="textview_restaurant">Restaurant</string>
 </resources>
