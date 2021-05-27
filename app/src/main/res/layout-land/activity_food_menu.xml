@@ -22,89 +22,137 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.064" />
 
-        <Button
-            android:id="@+id/button_food1"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="100dp"
-            android:text="Button"
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="968dp"
+            android:layout_height="482dp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.051"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.384" />
+            app:layout_constraintVertical_bias="0.916">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_food1"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Button" />
+
+                    <Button
+                        android:id="@+id/button_food2"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Button" />
+
+                    <Button
+                        android:id="@+id/button_food3"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Button" />
+
+                    <Button
+                        android:id="@+id/button_food4"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Button" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_food5"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Button" />
+
+                    <Button
+                        android:id="@+id/button_food6"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Button" />
+
+                    <Button
+                        android:id="@+id/button_food7"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Button" />
+
+                    <Button
+                        android:id="@+id/button_food8"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Button" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
 
         <Button
-            android:id="@+id/button_food2"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="100dp"
-            android:text="Button"
+            android:id="@+id/button_done"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:text="DONE"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button_food1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toEndOf="@+id/scrollView2"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.384" />
+            app:layout_constraintVertical_bias="0.924" />
 
-        <Button
-            android:id="@+id/button_food3"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="100dp"
-            android:text="Button"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button_food2"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.384" />
-
-        <Button
-            android:id="@+id/button_food4"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="100dp"
-            android:text="Button"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button_food3"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.384" />
-
-        <Button
-            android:id="@+id/button_food5"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="100dp"
-            android:text="Button"
+        <ScrollView
+            android:layout_width="539dp"
+            android:layout_height="380dp"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.998"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_food1" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
 
-        <Button
-            android:id="@+id/button_food6"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="100dp"
-            android:text="Button"
-            app:layout_constraintStart_toEndOf="@+id/button_food5"
-            app:layout_constraintTop_toBottomOf="@+id/button_food2" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
 
-        <Button
-            android:id="@+id/button_food7"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="100dp"
-            android:text="Button"
-            app:layout_constraintStart_toEndOf="@+id/button_food6"
-            app:layout_constraintTop_toBottomOf="@+id/button_food3" />
-
-        <Button
-            android:id="@+id/button_food8"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="100dp"
-            android:text="Button"
-            app:layout_constraintStart_toEndOf="@+id/button_food7"
-            app:layout_constraintTop_toBottomOf="@+id/button_food4" />
+                <TextView
+                    android:id="@+id/textView_orderlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order List" />
+            </LinearLayout>
+        </ScrollView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
