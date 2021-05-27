@@ -85,6 +85,7 @@ public class LoginActivity extends AppCompatActivity {
                             Toast.makeText(LoginActivity.this, "Authentication Login Success.",
                                     Toast.LENGTH_SHORT).show();
                             FirebaseUser user = mAuth.getCurrentUser();
+                            homepage();
                             updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.
@@ -113,7 +114,9 @@ public class LoginActivity extends AppCompatActivity {
         signIn(mActivityLoginBinding.editTextUsername.getText().toString(), mActivityLoginBinding.editTextPassword.getText().toString());
     }
 
-    public void homepage(View view) {
-        //Intent intent = new
+    public void homepage() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
