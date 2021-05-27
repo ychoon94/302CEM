@@ -28,7 +28,7 @@
             android:layout_marginStart="100dp"
             android:layout_marginTop="350dp"
             android:text="@string/button_table_1"
-            android:onClick="menu"
+            android:onClick="menu1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,7 +39,7 @@
             android:layout_marginStart="120dp"
             android:layout_marginTop="350dp"
             android:text="@string/button_table_2"
-            android:onClick="menu"
+            android:onClick="menu2"
             app:layout_constraintStart_toEndOf="@+id/button_table1"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -50,7 +50,7 @@
             android:layout_marginStart="120dp"
             android:layout_marginTop="350dp"
             android:text="@string/button_table_3"
-            android:onClick="menu"
+            android:onClick="menu3"
             app:layout_constraintStart_toEndOf="@+id/button_table2"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -61,7 +61,7 @@
             android:layout_marginStart="120dp"
             android:layout_marginTop="350dp"
             android:text="@string/button_table_4"
-            android:onClick="menu"
+            android:onClick="menu4"
             app:layout_constraintStart_toEndOf="@+id/button_table3"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -72,7 +72,7 @@
             android:layout_marginStart="120dp"
             android:layout_marginTop="350dp"
             android:text="@string/button_table_5"
-            android:onClick="menu"
+            android:onClick="menu5"
             app:layout_constraintStart_toEndOf="@+id/button_table4"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -83,7 +83,7 @@
             android:layout_marginStart="100dp"
             android:layout_marginTop="100dp"
             android:text="@string/button_table_6"
-            android:onClick="menu"
+            android:onClick="menu6"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button_table1" />
 
@@ -94,7 +94,7 @@
             android:layout_marginStart="120dp"
             android:layout_marginTop="100dp"
             android:text="@string/button_table_7"
-            android:onClick="menu"
+            android:onClick="menu7"
             app:layout_constraintStart_toEndOf="@+id/button_table6"
             app:layout_constraintTop_toBottomOf="@+id/button_table2" />
 
@@ -105,7 +105,7 @@
             android:layout_marginStart="120dp"
             android:layout_marginTop="100dp"
             android:text="@string/button_table_8"
-            android:onClick="menu"
+            android:onClick="menu8"
             app:layout_constraintStart_toEndOf="@+id/button_table7"
             app:layout_constraintTop_toBottomOf="@+id/button_table3" />
 
@@ -116,7 +116,7 @@
             android:layout_marginStart="120dp"
             android:layout_marginTop="100dp"
             android:text="@string/button_table_9"
-            android:onClick="menu"
+            android:onClick="menu9"
             app:layout_constraintStart_toEndOf="@+id/button_table8"
             app:layout_constraintTop_toBottomOf="@+id/button_table4" />
 
@@ -127,7 +127,7 @@
             android:layout_marginStart="120dp"
             android:layout_marginTop="100dp"
             android:text="@string/button_table_10"
-            android:onClick="menu"
+            android:onClick="menu10"
             app:layout_constraintStart_toEndOf="@+id/button_table9"
             app:layout_constraintTop_toBottomOf="@+id/button_table5" />
     </androidx.constraintlayout.widget.ConstraintLayout>
