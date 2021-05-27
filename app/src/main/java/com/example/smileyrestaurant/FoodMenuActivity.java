@@ -25,6 +25,6 @@ public class FoodMenuActivity extends AppCompatActivity {
 
         tablename = getIntent().getStringExtra("table");
 
-        mActivityFoodMenuBinding.textView.setText(tablename);
+//        mActivityFoodMenuBinding.textView.setText(tablename);
     }
 }
