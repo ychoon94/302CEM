@@ -7,6 +7,7 @@ import androidx.databinding.DataBindingUtil;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import com.example.smileyrestaurant.databinding.ActivityFoodMenuBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -17,11 +18,18 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 public class FoodMenuActivity extends AppCompatActivity {
 
     private ActivityFoodMenuBinding mActivityFoodMenuBinding;
 //    SharedPreferences mSharedPreferences;
     private String tablename;
+
+    private String price1,price2,price3,price4,price5,price6,price7,price8;
+
+    private Integer count1,count2,count3,count4,count5,count6,count7,count8;
 
     private DatabaseReference mDatabase;
 
@@ -36,26 +44,17 @@ public class FoodMenuActivity extends AppCompatActivity {
 
         tablename = getIntent().getStringExtra("table");
 
+        count1 = 0;
+        count2 = 0;
+        count3 = 0;
+        count4 = 0;
+        count5 = 0;
+        count6 = 0;
+        count7 = 0;
+        count8 = 0;
+
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
-//        final DatabaseReference foodmenuref = mDatabase.child("foodmenu");
-//
-//        foodmenuref.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(DataSnapshot snapshot) {
-//                for (DataSnapshot data : snapshot.getChildren()) {
-//                    if (data.getKey().equals("name")){
-//                        String foodname = data.getValue().toString();
-//                        mActivityFoodMenuBinding.buttonFood1.setText(foodname);
-//                    }
-//                }
-//            }
-//
-//            @Override
-//            public void onCancelled(DatabaseError error) {
-//
-//            }
-//        });
 
         mDatabase.child("foodmenu").child("food1").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
             @Override
@@ -68,6 +67,9 @@ public class FoodMenuActivity extends AppCompatActivity {
                         if (data.getKey().equals("name")) {
                             String foodname = data.getValue().toString();
                             mActivityFoodMenuBinding.buttonFood1.setText(foodname);
+                        }
+                        if (data.getKey().equals("price")) {
+                            price1 = data.getValue().toString();
                         }
                     }
 
@@ -89,6 +91,9 @@ public class FoodMenuActivity extends AppCompatActivity {
                             String foodname = data.getValue().toString();
                             mActivityFoodMenuBinding.buttonFood2.setText(foodname);
                         }
+                        if (data.getKey().equals("price")) {
+                            price2 = data.getValue().toString();
+                        }
                     }
 
 //                    mActivityFoodMenuBinding.buttonFood1.setText(task.getResult().getValue().toString());
@@ -108,6 +113,9 @@ public class FoodMenuActivity extends AppCompatActivity {
                         if (data.getKey().equals("name")) {
                             String foodname = data.getValue().toString();
                             mActivityFoodMenuBinding.buttonFood3.setText(foodname);
+                        }
+                        if (data.getKey().equals("price")) {
+                            price3 = data.getValue().toString();
                         }
                     }
 
@@ -129,6 +137,9 @@ public class FoodMenuActivity extends AppCompatActivity {
                             String foodname = data.getValue().toString();
                             mActivityFoodMenuBinding.buttonFood4.setText(foodname);
                         }
+                        if (data.getKey().equals("price")) {
+                            price4 = data.getValue().toString();
+                        }
                     }
 
 //                    mActivityFoodMenuBinding.buttonFood1.setText(task.getResult().getValue().toString());
@@ -148,6 +159,9 @@ public class FoodMenuActivity extends AppCompatActivity {
                         if (data.getKey().equals("name")) {
                             String foodname = data.getValue().toString();
                             mActivityFoodMenuBinding.buttonFood5.setText(foodname);
+                        }
+                        if (data.getKey().equals("price")) {
+                            price5 = data.getValue().toString();
                         }
                     }
 
@@ -169,6 +183,9 @@ public class FoodMenuActivity extends AppCompatActivity {
                             String foodname = data.getValue().toString();
                             mActivityFoodMenuBinding.buttonFood6.setText(foodname);
                         }
+                        if (data.getKey().equals("price")) {
+                            price6 = data.getValue().toString();
+                        }
                     }
 
 //                    mActivityFoodMenuBinding.buttonFood1.setText(task.getResult().getValue().toString());
@@ -189,6 +206,9 @@ public class FoodMenuActivity extends AppCompatActivity {
                             String foodname = data.getValue().toString();
                             mActivityFoodMenuBinding.buttonFood7.setText(foodname);
                         }
+                        if (data.getKey().equals("price")) {
+                            price7 = data.getValue().toString();
+                        }
                     }
 
 //                    mActivityFoodMenuBinding.buttonFood1.setText(task.getResult().getValue().toString());
@@ -208,6 +228,9 @@ public class FoodMenuActivity extends AppCompatActivity {
                         if (data.getKey().equals("name")) {
                             String foodname = data.getValue().toString();
                             mActivityFoodMenuBinding.buttonFood8.setText(foodname);
+                        }
+                        if (data.getKey().equals("price")) {
+                            price8 = data.getValue().toString();
                         }
                     }
 
@@ -245,6 +268,58 @@ public class FoodMenuActivity extends AppCompatActivity {
 
 
 //        mActivityFoodMenuBinding.textView.setText(tablename);
+    }
+
+    public void confirmorder(View view) {
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/YY HH:mm");
+        Calendar c = Calendar.getInstance();
+        String date = sdf.format(c.getTime());
+        mDatabase.child("orderlist").child("placed").child("0").child("ordertime").setValue(date);
+    }
+
+    public void addtoorder1(View view) {
+        count1 = count1 + 1;
+        mDatabase.child("orderlist").child("placed").child("0").child("staff name").setValue("tyc");
+        mDatabase.child("orderlist").child("placed").child("0").child("food").setValue(mActivityFoodMenuBinding.buttonFood1.getText().toString());
+        mDatabase.child("orderlist").child("placed").child("0").child("food").child(mActivityFoodMenuBinding.buttonFood1.getText().toString()).child("price").setValue(price1);
+        mDatabase.child("orderlist").child("placed").child("0").child("food").child(mActivityFoodMenuBinding.buttonFood1.getText().toString()).child("quantity").setValue(count1);
+        mDatabase.child("orderlist").child("placed").child("0").child("tablenumber").setValue(tablename);
+    }
+
+    public void addtoorder2(View view) {
+
+    }
+
+    public void addtoorder3(View view) {
+
+    }
+
+    public void addtoorder4(View view) {
+
+    }
+
+    public void addtoorder5(View view) {
+
+    }
+
+    public void addtoorder6(View view) {
+
+    }
+
+    public void addtoorder7(View view) {
+
+    }
+
+    public void addtoorder8(View view) {
+
+    }
+
+    public void addtoorder9(View view) {
+
+    }
+
+    public void addtoorder10(View view) {
+
     }
 
 }
