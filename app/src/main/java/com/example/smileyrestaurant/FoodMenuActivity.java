@@ -282,18 +282,18 @@ public class FoodMenuActivity extends AppCompatActivity {
     public void addtoorder1(View view) {
         count1 = count1 + 1;
         mDatabase.child("orderlist").child("placed").child(ordernumber).child("staff name").setValue("tyc");
-        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("0").setValue(mActivityFoodMenuBinding.buttonFood1.getText().toString());
-        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("0").child(mActivityFoodMenuBinding.buttonFood1.getText().toString()).child("price").setValue(price1);
-        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("0").child(mActivityFoodMenuBinding.buttonFood1.getText().toString()).child("quantity").setValue(count1);
+        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("1").child("name").setValue(mActivityFoodMenuBinding.buttonFood1.getText().toString());
+        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("1").child("price").setValue(price1);
+        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("1").child("quantity").setValue(count1);
         mDatabase.child("orderlist").child("placed").child(ordernumber).child("tablenumber").setValue(tablename);
     }
 
     public void addtoorder2(View view) {
         count2 = count2 + 1;
         mDatabase.child("orderlist").child("placed").child(ordernumber).child("staff name").setValue("tyc");
-        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("1").setValue(mActivityFoodMenuBinding.buttonFood2.getText().toString());
-        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("1").child(mActivityFoodMenuBinding.buttonFood2.getText().toString()).child("price").setValue(price2);
-        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("1").child(mActivityFoodMenuBinding.buttonFood2.getText().toString()).child("quantity").setValue(count2);
+        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("2").child("name").setValue(mActivityFoodMenuBinding.buttonFood2.getText().toString());
+        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("2").child("price").setValue(price2);
+        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("2").child("quantity").setValue(count2);
         mDatabase.child("orderlist").child("placed").child(ordernumber).child("tablenumber").setValue(tablename);
 
     }
@@ -301,54 +301,54 @@ public class FoodMenuActivity extends AppCompatActivity {
     public void addtoorder3(View view) {
         count3 = count3 + 1;
         mDatabase.child("orderlist").child("placed").child(ordernumber).child("staff name").setValue("tyc");
-        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("3").setValue(mActivityFoodMenuBinding.buttonFood3.getText().toString());
-        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("3").child(mActivityFoodMenuBinding.buttonFood3.getText().toString()).child("price").setValue(price3);
-        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("3").child(mActivityFoodMenuBinding.buttonFood3.getText().toString()).child("quantity").setValue(count3);
+        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("3").child("name").setValue(mActivityFoodMenuBinding.buttonFood3.getText().toString());
+        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("3").child("price").setValue(price3);
+        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("3").child("quantity").setValue(count3);
         mDatabase.child("orderlist").child("placed").child(ordernumber).child("tablenumber").setValue(tablename);
     }
 
     public void addtoorder4(View view) {
         count4 = count4 + 1;
         mDatabase.child("orderlist").child("placed").child(ordernumber).child("staff name").setValue("tyc");
-        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("4").setValue(mActivityFoodMenuBinding.buttonFood4.getText().toString());
-        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("4").child(mActivityFoodMenuBinding.buttonFood4.getText().toString()).child("price").setValue(price4);
-        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("4").child(mActivityFoodMenuBinding.buttonFood4.getText().toString()).child("quantity").setValue(count4);
+        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("4").child("name").setValue(mActivityFoodMenuBinding.buttonFood4.getText().toString());
+        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("4").child("price").setValue(price4);
+        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("4").child("quantity").setValue(count4);
         mDatabase.child("orderlist").child("placed").child(ordernumber).child("tablenumber").setValue(tablename);
     }
 
     public void addtoorder5(View view) {
         count5 = count5 + 1;
         mDatabase.child("orderlist").child("placed").child(ordernumber).child("staff name").setValue("tyc");
-        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("5").setValue(mActivityFoodMenuBinding.buttonFood5.getText().toString());
-        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("5").child(mActivityFoodMenuBinding.buttonFood5.getText().toString()).child("price").setValue(price5);
-        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("5").child(mActivityFoodMenuBinding.buttonFood5.getText().toString()).child("quantity").setValue(count5);
+        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("5").child("name").setValue(mActivityFoodMenuBinding.buttonFood5.getText().toString());
+        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("5").child("price").setValue(price5);
+        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("5").child("quantity").setValue(count5);
         mDatabase.child("orderlist").child("placed").child(ordernumber).child("tablenumber").setValue(tablename);
     }
 
     public void addtoorder6(View view) {
         count6 = count6 + 1;
         mDatabase.child("orderlist").child("placed").child(ordernumber).child("staff name").setValue("tyc");
-        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("6").setValue(mActivityFoodMenuBinding.buttonFood6.getText().toString());
-        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("6").child(mActivityFoodMenuBinding.buttonFood6.getText().toString()).child("price").setValue(price6);
-        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("6").child(mActivityFoodMenuBinding.buttonFood6.getText().toString()).child("quantity").setValue(count6);
+        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("6").child("name").setValue(mActivityFoodMenuBinding.buttonFood6.getText().toString());
+        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("6").child("price").setValue(price6);
+        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("6").child("quantity").setValue(count6);
         mDatabase.child("orderlist").child("placed").child(ordernumber).child("tablenumber").setValue(tablename);
     }
 
     public void addtoorder7(View view) {
         count7 = count7 + 1;
         mDatabase.child("orderlist").child("placed").child(ordernumber).child("staff name").setValue("tyc");
-        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("7").setValue(mActivityFoodMenuBinding.buttonFood7.getText().toString());
-        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("7").child(mActivityFoodMenuBinding.buttonFood7.getText().toString()).child("price").setValue(price7);
-        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("7").child(mActivityFoodMenuBinding.buttonFood7.getText().toString()).child("quantity").setValue(count7);
+        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("7").child("name").setValue(mActivityFoodMenuBinding.buttonFood7.getText().toString());
+        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("7").child("price").setValue(price7);
+        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("7").child("quantity").setValue(count7);
         mDatabase.child("orderlist").child("placed").child(ordernumber).child("tablenumber").setValue(tablename);
     }
 
     public void addtoorder8(View view) {
         count8 = count8 + 1;
         mDatabase.child("orderlist").child("placed").child(ordernumber).child("staff name").setValue("tyc");
-        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("8").setValue(mActivityFoodMenuBinding.buttonFood8.getText().toString());
-        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("8").child(mActivityFoodMenuBinding.buttonFood8.getText().toString()).child("price").setValue(price8);
-        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("8").child(mActivityFoodMenuBinding.buttonFood8.getText().toString()).child("quantity").setValue(count8);
+        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("8").child("name").setValue(mActivityFoodMenuBinding.buttonFood8.getText().toString());
+        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("8").child("price").setValue(price8);
+        mDatabase.child("orderlist").child("placed").child(ordernumber).child("food").child("8").child("quantity").setValue(count8);
         mDatabase.child("orderlist").child("placed").child(ordernumber).child("tablenumber").setValue(tablename);
     }
 

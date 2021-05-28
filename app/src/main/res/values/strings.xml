@@ -29,4 +29,5 @@
     <string name="button_table_10">Table 10</string>
     <string name="textview_food_menu">Food Menu</string>
     <string name="button_done">DONE</string>
+    <string name="textview_active_order">Active Order</string>
 </resources>
