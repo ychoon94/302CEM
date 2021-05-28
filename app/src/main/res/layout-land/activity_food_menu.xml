@@ -10,7 +10,7 @@
         tools:context=".FoodMenuActivity">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView_foodmenu_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/textview_food_menu"
@@ -23,7 +23,7 @@
             app:layout_constraintVertical_bias="0.064" />
 
         <ScrollView
-            android:id="@+id/scrollView2"
+            android:id="@+id/scrollView_foodmenu"
             android:layout_width="968dp"
             android:layout_height="482dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -39,6 +39,7 @@
                 android:orientation="vertical">
 
                 <LinearLayout
+                    android:id="@+id/linearlayout1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="20dp"
@@ -50,6 +51,7 @@
                         android:layout_height="200dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
+                        android:layout_weight="1"
                         android:text="Button" />
 
                     <Button
@@ -58,6 +60,7 @@
                         android:layout_height="200dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
+                        android:layout_weight="1"
                         android:text="Button" />
 
                     <Button
@@ -66,6 +69,7 @@
                         android:layout_height="200dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
+                        android:layout_weight="1"
                         android:text="Button" />
 
                     <Button
@@ -74,10 +78,12 @@
                         android:layout_height="200dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
+                        android:layout_weight="1"
                         android:text="Button" />
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/linearlayout2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="20dp"
@@ -89,6 +95,7 @@
                         android:layout_height="200dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
+                        android:layout_weight="1"
                         android:text="Button" />
 
                     <Button
@@ -97,6 +104,7 @@
                         android:layout_height="200dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
+                        android:layout_weight="1"
                         android:text="Button" />
 
                     <Button
@@ -105,6 +113,7 @@
                         android:layout_height="200dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
+                        android:layout_weight="1"
                         android:text="Button" />
 
                     <Button
@@ -113,8 +122,108 @@
                         android:layout_height="200dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
+                        android:layout_weight="1"
                         android:text="Button" />
                 </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/button_food9"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:text="Button"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/button_food10"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:text="Button"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/button_food11"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:text="Button"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/button_food12"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:text="Button"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/button_food13"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:text="Button"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/button_food14"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:text="Button"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/button_food15"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:text="Button"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/button_food16"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:text="Button"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
 
             </LinearLayout>
         </ScrollView>
@@ -123,36 +232,14 @@
             android:id="@+id/button_done"
             android:layout_width="150dp"
             android:layout_height="100dp"
-            android:text="DONE"
+            android:text="@string/button_done"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
-            app:layout_constraintStart_toEndOf="@+id/scrollView2"
+            app:layout_constraintStart_toEndOf="@+id/scrollView_foodmenu"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.924" />
 
-        <ScrollView
-            android:layout_width="539dp"
-            android:layout_height="380dp"
-            app:layout_constraintBottom_toTopOf="@+id/scrollView2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.998"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" >
-
-                <TextView
-                    android:id="@+id/textView_orderlist"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Order List" />
-            </LinearLayout>
-        </ScrollView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
