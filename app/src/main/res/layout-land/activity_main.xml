@@ -88,6 +88,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:textSize="22sp"
+                        android:textStyle="bold"
                         android:text="Table No" />
 
                     <TextView
@@ -96,6 +97,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:textSize="22sp"
+                        android:textStyle="bold"
                         android:text="Food" />
 
                     <TextView
@@ -104,6 +106,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:textSize="22sp"
+                        android:textStyle="bold"
                         android:text="Quantity" />
 
                     <TextView
@@ -112,6 +115,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:textSize="22sp"
+                        android:textStyle="bold"
                         android:text="Order Time" />
 
                     <TextView
@@ -120,6 +124,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:textSize="22sp"
+                        android:textStyle="bold"
                         android:text="Status" />
                 </LinearLayout>
 
@@ -133,7 +138,8 @@
                         android:layout_width="192dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:textSize="30sp"
+                        android:text="" />
 
                     <LinearLayout
                         android:id="@+id/myLinearLayoutVertical"
@@ -146,22 +152,25 @@
                             android:id="@+id/textview_foodname1"
                             android:layout_width="192dp"
                             android:layout_height="wrap_content"
+                            android:textSize="22sp"
                             android:layout_weight="1"
-                            android:text="FOOOOOD" />
+                            android:text="" />
 
                         <TextView
                             android:id="@+id/textView_foodname2"
                             android:layout_width="192dp"
                             android:layout_height="wrap_content"
+                            android:textSize="22sp"
                             android:layout_weight="1"
-                            android:text="FOOOOOD" />
+                            android:text="" />
 
                         <TextView
                             android:id="@+id/textView_foodname3"
                             android:layout_width="192dp"
                             android:layout_height="wrap_content"
+                            android:textSize="22sp"
                             android:layout_weight="1"
-                            android:text="FOOOOOD" />
+                            android:text="" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -174,22 +183,25 @@
                             android:id="@+id/textView_quantity1"
                             android:layout_width="192dp"
                             android:layout_height="wrap_content"
+                            android:textSize="22sp"
                             android:layout_weight="1"
-                            android:text="cry" />
+                            android:text="" />
 
                         <TextView
                             android:id="@+id/textView_quantity2"
                             android:layout_width="192dp"
                             android:layout_height="wrap_content"
+                            android:textSize="22sp"
                             android:layout_weight="1"
-                            android:text="cry" />
+                            android:text="" />
 
                         <TextView
                             android:id="@+id/textView_quantity3"
                             android:layout_width="192dp"
                             android:layout_height="wrap_content"
+                            android:textSize="22sp"
                             android:layout_weight="1"
-                            android:text="cry" />
+                            android:text="" />
 
                     </LinearLayout>
 
@@ -198,14 +210,16 @@
                         android:layout_width="192dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:textSize="30sp"
+                        android:text="" />
 
                     <TextView
                         android:id="@+id/textView_status1"
                         android:layout_width="192dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:textSize="30sp"
+                        android:text="" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -218,7 +232,8 @@
                         android:layout_width="192dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:textSize="30sp"
+                        android:text="" />
 
                     <LinearLayout
                         android:layout_width="192dp"
@@ -231,21 +246,21 @@
                             android:layout_width="192dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="FOOOOOD" />
+                            android:text="" />
 
                         <TextView
                             android:id="@+id/textView_foodname5"
                             android:layout_width="192dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="FOOOOOD" />
+                            android:text="" />
 
                         <TextView
                             android:id="@+id/textView_foodname6"
                             android:layout_width="192dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="FOOOOOD" />
+                            android:text="" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -259,21 +274,21 @@
                             android:layout_width="192dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="TextView" />
+                            android:text="" />
 
                         <TextView
                             android:id="@+id/textView_quantity5"
                             android:layout_width="192dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="TextView" />
+                            android:text="" />
 
                         <TextView
                             android:id="@+id/textView_quantity6"
                             android:layout_width="192dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="TextView" />
+                            android:text="" />
                     </LinearLayout>
 
                     <TextView
@@ -281,14 +296,16 @@
                         android:layout_width="192dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:textSize="30sp"
+                        android:text="" />
 
                     <TextView
                         android:id="@+id/textView_status2"
                         android:layout_width="192dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="TextView" />
+                        android:textSize="30sp"
+                        android:text="" />
                 </LinearLayout>
 
             </LinearLayout>

@@ -9,17 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmileyRestaurant">
-        <activity android:name=".FoodMenuActivity"></activity>
+        <activity android:name=".KitchenActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".FoodMenuActivity"
+            android:screenOrientation="landscape"></activity>
         <activity
             android:name=".LoginActivity"
             android:screenOrientation="landscape">
 
-<!--             <intent-filter>-->
-<!--             <action android:name="android.intent.action.MAIN" />-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
 
 
-<!--             <category android:name="android.intent.category.LAUNCHER" />-->
-<!--             </intent-filter>-->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".ChooseTableActivity"
