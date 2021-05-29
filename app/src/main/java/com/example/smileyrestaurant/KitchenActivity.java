@@ -28,6 +28,8 @@ public class KitchenActivity extends AppCompatActivity {
 
     private String ordertime1, ordertime2, foodname1, foodname2, foodname3, foodname4, foodname5, foodname6, quantity1, quantity2, quantity3, quantity4, quantity5, quantity6, status1, status2;
 
+    private String placed;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,11 +55,9 @@ public class KitchenActivity extends AppCompatActivity {
         quantity6 = getIntent().getStringExtra("quantity6");
         status2 = getIntent().getStringExtra("status2");
 
-        Log.d("HELLLLLLLLLLLLLLLLLLLLLOOOOOOOOOOOO", ordertime1);
-        Log.d("HELLLLLLLLLLLLLLLLLLLLLOOOOOOOOOOOO", foodname1);
+        placed = status1;
 
-
-        if (status1.equals("placed")){
+        if (status1.equals(placed)){
             mActivityKitchenBinding.textViewOrdertime1.setText(ordertime1);
             mActivityKitchenBinding.textviewFoodname1.setText(foodname1);
             mActivityKitchenBinding.textViewFoodname2.setText(foodname2);
