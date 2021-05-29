@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/restaurant_image_view"
+        android:layout_width="209dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/smilehappy_icon" />
+
+    <TextView
+        android:id="@+id/smileHappy_text_view"
+        android:layout_width="488dp"
+        android:layout_height="98dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:letterSpacing="0.08"
+        android:text="SMile HaPPy"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_image_view" />
+
+    <TextView
+        android:id="@+id/restaurant_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Restaurant"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="40dp"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/smileHappy_text_view" />
+
+    <EditText
+        android:id="@+id/username1_edit_text"
+        android:layout_width="668dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="284dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:letterSpacing="0.1"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/password1_edit_text"
+        android:layout_width="668dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="188dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:letterSpacing="0.1"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="619dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/button_round"
+        android:letterSpacing="0.2"
+        android:text="R E G I S T E R"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
