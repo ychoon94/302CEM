@@ -35,6 +35,24 @@ public class KitchenActivity extends AppCompatActivity {
 
         mActivityKitchenBinding = DataBindingUtil.setContentView(this, R.layout.activity_kitchen);
 
+        ordertime1 = getIntent().getStringExtra("table");
+        foodname1 = getIntent().getStringExtra("ordernumber");
+        foodname2 = getIntent().getStringExtra("table");
+        foodname3 = getIntent().getStringExtra("ordernumber");
+        quantity1 = getIntent().getStringExtra("table");
+        quantity2 = getIntent().getStringExtra("ordernumber");
+        quantity3 = getIntent().getStringExtra("table");
+        status1 = getIntent().getStringExtra("ordernumber");
+
+        ordertime2 = getIntent().getStringExtra("table");
+        foodname4 = getIntent().getStringExtra("ordernumber");
+        foodname5 = getIntent().getStringExtra("table");
+        foodname6 = getIntent().getStringExtra("ordernumber");
+        quantity4 = getIntent().getStringExtra("table");
+        quantity5 = getIntent().getStringExtra("ordernumber");
+        quantity6 = getIntent().getStringExtra("table");
+        status2 = getIntent().getStringExtra("ordernumber");
+
 
     }
 
