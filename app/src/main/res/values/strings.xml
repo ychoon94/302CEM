@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Smiley restaurant</string>
+    <string name="kitchen_title">Kitchen</string>
+    <string name="order_placed">Order Placed</string>
+    <string name="time_ordered">Time Ordered</string>
+    <string name="table_number">Table No.</string>
+    <string name="btn_ready">Ready</string>
+    <string name="table_num">0</string>
+    <string name="total_placed">Total Placed:</string>
+    <string name="total_placed_quantity">0</string>
+    <string name="food_ordered">food item</string>
+    <string name="total_no_placed">0</string>
 </resources>
