@@ -30,4 +30,6 @@
     <string name="textview_food_menu">Food Menu</string>
     <string name="button_done">DONE</string>
     <string name="textview_active_order">Active Order</string>
+    <string name="textview_kitchen_title">Kitchen</string>
+    <string name="textview_placed_order">Placed Order</string>
 </resources>

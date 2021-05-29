@@ -1,17 +1,20 @@
 package com.example.smileyrestaurant;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.View;
 
 import com.example.smileyrestaurant.databinding.ActivityMainBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -27,21 +30,22 @@ public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding mActivityMainBinding;
 
-    private Integer ordernumber;
-
     private DatabaseReference mDatabase;
 
     public static final String TAG = "TAG";
+
+    private String ordertime1, ordertime2, foodname1, foodname2, foodname3, foodname4, foodname5, foodname6, quantity1, quantity2, quantity3, quantity4, quantity5, quantity6, status1, status2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ordernumber = 0;
 
         mActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
+
         mDatabase = FirebaseDatabase.getInstance().getReference();
+
 
         mDatabase.child("orderlist").child("1").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
             @Override
@@ -234,11 +238,47 @@ public class MainActivity extends AppCompatActivity {
 
     public void addOrder(View view) {
         Intent intent = new Intent(this, ChooseTableActivity.class);
-        ordernumber = ordernumber + 1;
-        intent.putExtra("ordernumber", ordernumber.toString());
         startActivity(intent);
+        finish();
     }
 
     public void kitchen(View view) {
+        ordertime1 = mActivityMainBinding.textViewOrdertime1.getText().toString();
+        foodname1 = mActivityMainBinding.textviewFoodname1.getText().toString();
+        foodname2 = mActivityMainBinding.textViewFoodname2.getText().toString();
+        foodname3 = mActivityMainBinding.textViewFoodname3.getText().toString();
+        quantity1 = mActivityMainBinding.textViewQuantity1.getText().toString();
+        quantity2 = mActivityMainBinding.textViewQuantity2.getText().toString();
+        quantity3 = mActivityMainBinding.textViewQuantity3.getText().toString();
+        status1 = mActivityMainBinding.textViewStatus1.getText().toString();
+
+        ordertime2 = mActivityMainBinding.textViewOrdertime2.getText().toString();
+        foodname4 = mActivityMainBinding.textViewFoodname4.getText().toString();
+        foodname5 = mActivityMainBinding.textViewFoodname5.getText().toString();
+        foodname6 = mActivityMainBinding.textViewFoodname6.getText().toString();
+        quantity4 = mActivityMainBinding.textViewQuantity4.getText().toString();
+        quantity5 = mActivityMainBinding.textViewQuantity5.getText().toString();
+        quantity6 = mActivityMainBinding.textViewQuantity6.getText().toString();
+        status2 = mActivityMainBinding.textViewStatus2.getText().toString();
+
+
+        Intent intent1 = new Intent(this, KitchenActivity.class);
+        intent1.putExtra("ordertime1", ordertime1);
+        intent1.putExtra("foodname1", foodname1);
+        intent1.putExtra("foodname2", foodname2);
+        intent1.putExtra("foodname3", foodname3);
+        intent1.putExtra("quantity1", quantity1);
+        intent1.putExtra("quantity2", quantity2);
+        intent1.putExtra("quantity3", quantity3);
+
+        intent1.putExtra("ordertime2", ordertime2);
+        intent1.putExtra("foodname4", foodname4);
+        intent1.putExtra("foodname5", foodname5);
+        intent1.putExtra("foodname6", foodname6);
+        intent1.putExtra("quantity4", quantity4);
+        intent1.putExtra("quantity5", quantity5);
+        intent1.putExtra("quantity6", quantity6);
+        startActivity(intent1);
+        finish();
     }
 }

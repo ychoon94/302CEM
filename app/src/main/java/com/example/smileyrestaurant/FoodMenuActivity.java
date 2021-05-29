@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -273,10 +274,15 @@ public class FoodMenuActivity extends AppCompatActivity {
     }
 
     public void confirmorder(View view) {
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/YY HH:mm");
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/YY");
+        SimpleDateFormat sdf1 = new SimpleDateFormat("HH:mm");
         Calendar c = Calendar.getInstance();
         String date = sdf.format(c.getTime());
-        mDatabase.child("orderlist").child(ordernumber).child("ordertime").setValue(date);
+        String time = sdf1.format(c.getTime());
+        mDatabase.child("orderlist").child(ordernumber).child("orderdate").setValue(date);
+        mDatabase.child("orderlist").child(ordernumber).child("ordertime").setValue(time);
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
     public void addtoorder1(View view) {
