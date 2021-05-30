@@ -52,49 +52,42 @@
   <FrameLayout
       android:layout_width="917dp"
       android:layout_height="533dp"
+      android:layout_marginStart="55dp"
       android:background="#267976"
-      tools:layout_editor_absoluteX="55dp"
+      app:layout_constraintStart_toStartOf="parent"
       tools:layout_editor_absoluteY="221dp">
 
-    <LinearLayout
-        android:layout_width="919dp"
-        android:layout_height="416dp"
-        android:orientation="vertical"/>
-
-    <LinearLayout
-        android:layout_width="919dp"
-        android:layout_height="243dp"
-        android:orientation="vertical">
-
-    </LinearLayout>
-
     <TableRow
-        android:layout_width="678dp"
-        android:layout_height="match_parent">
-
-    </TableRow>
-
-    <LinearLayout
-        android:layout_width="919dp"
-        android:layout_height="46dp"
-        android:orientation="vertical">
-
-    </LinearLayout>
-
-    <TableRow
-        android:layout_width="517dp"
-        android:layout_height="match_parent">
-
-    </TableRow>
-
-    <TableRow
+        android:id="@+id/TableNo"
         android:layout_width="106dp"
         android:layout_height="match_parent">
 
     </TableRow>
 
     <TableRow
+        android:id="@+id/Food"
         android:layout_width="314dp"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/Quantity"
+        android:layout_width="517dp"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/OrderTime"
+        android:layout_width="678dp"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/Status"
+        android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
   </FrameLayout>
