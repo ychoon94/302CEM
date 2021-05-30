@@ -283,6 +283,7 @@ public class FoodMenuActivity extends AppCompatActivity {
         mDatabase.child("orderlist").child(ordernumber).child("ordertime").setValue(time);
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+        finish();
     }
 
     public void addtoorder1(View view) {

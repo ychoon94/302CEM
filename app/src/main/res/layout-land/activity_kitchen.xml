@@ -21,21 +21,6 @@
             app:layout_constraintVertical_bias="0.091" />
 
 
-        <Button
-            android:id="@+id/button_ready"
-            android:layout_width="250dp"
-            android:layout_height="100dp"
-            android:layout_marginEnd="40dp"
-            android:onClick="readyorder"
-            android:text="Ready"
-            android:textSize="22sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/scrollView2"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.583" />
-
         <TextView
             android:id="@+id/textView_placedorder"
             android:layout_width="wrap_content"
@@ -56,7 +41,7 @@
             android:layout_marginTop="25dp"
             android:layout_marginBottom="48dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/button_kitchen"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_placedorder"
@@ -74,7 +59,7 @@
 
                     <TextView
                         android:id="@+id/textView_food_text"
-                        android:layout_width="320dp"
+                        android:layout_width="240dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Food"
@@ -83,7 +68,7 @@
 
                     <TextView
                         android:id="@+id/textView_quantity_text"
-                        android:layout_width="320dp"
+                        android:layout_width="240dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Quantity"
@@ -92,30 +77,40 @@
 
                     <TextView
                         android:id="@+id/textView_ordertime_text"
-                        android:layout_width="320dp"
+                        android:layout_width="240dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Order Time"
                         android:textSize="22sp"
                         android:textStyle="bold" />
 
+                    <TextView
+                        android:id="@+id/textView_spacer"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Update order status"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/linearlayout1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
                     <LinearLayout
                         android:id="@+id/myLinearLayoutVertical"
-                        android:layout_width="320dp"
+                        android:layout_width="240dp"
                         android:layout_height="200dp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/textview_foodname1"
-                            android:layout_width="320dp"
+                            android:layout_width="240dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text=""
@@ -123,7 +118,7 @@
 
                         <TextView
                             android:id="@+id/textView_foodname2"
-                            android:layout_width="320dp"
+                            android:layout_width="240dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text=""
@@ -131,7 +126,7 @@
 
                         <TextView
                             android:id="@+id/textView_foodname3"
-                            android:layout_width="320dp"
+                            android:layout_width="240dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text=""
@@ -139,14 +134,14 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="320dp"
+                        android:layout_width="240dp"
                         android:layout_height="200dp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/textView_quantity1"
-                            android:layout_width="320dp"
+                            android:layout_width="240dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text=""
@@ -154,7 +149,7 @@
 
                         <TextView
                             android:id="@+id/textView_quantity2"
-                            android:layout_width="320dp"
+                            android:layout_width="240dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text=""
@@ -162,7 +157,7 @@
 
                         <TextView
                             android:id="@+id/textView_quantity3"
-                            android:layout_width="320dp"
+                            android:layout_width="240dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text=""
@@ -172,70 +167,79 @@
 
                     <TextView
                         android:id="@+id/textView_ordertime1"
-                        android:layout_width="320dp"
+                        android:layout_width="240dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text=""
                         android:textSize="30sp" />
 
+                    <Button
+                        android:id="@+id/button_ready1"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:onClick="readyorder1"
+                        android:text="Ready"
+                        android:textSize="22sp" />
+
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/linearlayout2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="320dp"
+                        android:layout_width="240dp"
                         android:layout_height="200dp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/textView_foodname4"
-                            android:layout_width="320dp"
+                            android:layout_width="240dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="" />
 
                         <TextView
                             android:id="@+id/textView_foodname5"
-                            android:layout_width="320dp"
+                            android:layout_width="240dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="" />
 
                         <TextView
                             android:id="@+id/textView_foodname6"
-                            android:layout_width="320dp"
+                            android:layout_width="240dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="320dp"
+                        android:layout_width="240dp"
                         android:layout_height="200dp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/textView_quantity4"
-                            android:layout_width="320dp"
+                            android:layout_width="240dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="" />
 
                         <TextView
                             android:id="@+id/textView_quantity5"
-                            android:layout_width="320dp"
+                            android:layout_width="240dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="" />
 
                         <TextView
                             android:id="@+id/textView_quantity6"
-                            android:layout_width="320dp"
+                            android:layout_width="240dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="" />
@@ -243,11 +247,19 @@
 
                     <TextView
                         android:id="@+id/textView_ordertime2"
-                        android:layout_width="320dp"
+                        android:layout_width="240dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text=""
                         android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/button_ready2"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:onClick="readyorder2"
+                        android:text="Ready"
+                        android:textSize="22sp" />
 
                 </LinearLayout>
 
@@ -255,6 +267,19 @@
 
         </ScrollView>
 
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="57dp"
+            android:layout_height="48dp"
+            android:background="#000000"
+            android:onClick="gobackhome"
+            app:layout_constraintBottom_toTopOf="@+id/textView_placedorder"
+            app:layout_constraintEnd_toStartOf="@+id/textView_kitchentitle"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.666"
+            app:srcCompat="@drawable/abc_vector_test" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

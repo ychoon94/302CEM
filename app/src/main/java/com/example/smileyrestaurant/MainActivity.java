@@ -43,9 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
         mActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
-
         mDatabase = FirebaseDatabase.getInstance().getReference();
-
 
         mDatabase.child("orderlist").child("1").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
             @Override
