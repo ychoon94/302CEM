@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectTableActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="1280dp"
+        android:layout_height="152dp"
+        android:background="@color/colorBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/home_IV"
+        android:layout_width="180dp"
+        android:layout_height="148dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_icon" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="75dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="160dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:srcCompat="@drawable/line" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="824dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="28dp"
+        android:text="SMile HaPPy Restaurant"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="70dp"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="439dp"
+        android:layout_height="102dp"
+        android:layout_marginBottom="480dp"
+        android:letterSpacing="0.1"
+        android:text="Table List"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/second_IV"
+        android:layout_width="182dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="272dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/one_IV"
+        app:srcCompat="@drawable/two_icon" />
+
+    <ImageView
+        android:id="@+id/six_IV"
+        android:layout_width="182dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/six_icon" />
+
+    <ImageView
+        android:id="@+id/seven_IV"
+        android:layout_width="182dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/six_IV"
+        app:srcCompat="@drawable/seven_icon" />
+
+    <ImageView
+        android:id="@+id/four_IV"
+        android:layout_width="182dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="272dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/three_IV"
+        app:srcCompat="@drawable/four_icon" />
+
+    <ImageView
+        android:id="@+id/one_IV"
+        android:layout_width="182dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="264dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/one_icon" />
+
+    <ImageView
+        android:id="@+id/eight_IV"
+        android:layout_width="182dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/seven_IV"
+        app:srcCompat="@drawable/eight_icon" />
+
+    <ImageView
+        android:id="@+id/five_IV"
+        android:layout_width="182dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="272dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/four_IV"
+        app:srcCompat="@drawable/five_icon" />
+
+    <ImageView
+        android:id="@+id/nine_IV"
+        android:layout_width="182dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eight_IV"
+        app:srcCompat="@drawable/nine_icon" />
+
+    <ImageView
+        android:id="@+id/ten_IV"
+        android:layout_width="194dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nine_IV"
+        app:srcCompat="@drawable/ten_icon" />
+
+    <ImageView
+        android:id="@+id/three_IV"
+        android:layout_width="182dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="272dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/second_IV"
+        app:srcCompat="@drawable/three_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
