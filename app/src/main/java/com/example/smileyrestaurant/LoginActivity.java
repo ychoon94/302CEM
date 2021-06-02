@@ -35,6 +35,7 @@ public class LoginActivity extends AppCompatActivity {
 
         //initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
+        //this is oncreate function
     }
 
     @Override
