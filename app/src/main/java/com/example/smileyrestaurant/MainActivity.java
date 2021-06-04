@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                     Log.e("firebase", "Error getting data", task.getException());
                 }
                 else {
-                    //this is a line
+                    //merge from carmen
                     for (DataSnapshot data : task.getResult().getChildren()) {
                         if (data.getKey().equals("tablenumber")) {
                             String tablename = data.getValue().toString();
