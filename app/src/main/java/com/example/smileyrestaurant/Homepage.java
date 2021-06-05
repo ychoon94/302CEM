@@ -13,7 +13,7 @@ public class Homepage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
-
+        //error here
         Button button = findViewById(R.id.button);
         Button button2 = findViewById(R.id.button2);
 
