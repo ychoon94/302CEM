@@ -40,8 +40,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //error here
 
         mActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+
+//        mDatabase = FirebaseDatabase.getInstance().getReference();
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
