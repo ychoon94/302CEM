@@ -40,8 +40,10 @@ public class FoodMenuActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_food_menu);
         setContentView(R.layout.activity_food_menu);
 
+//        mActivityFoodMenuBinding = DataBindingUtil.setContentView(this, R.layout.activity_food_menu);
         mActivityFoodMenuBinding = DataBindingUtil.setContentView(this, R.layout.activity_food_menu);
 
         tablename = getIntent().getStringExtra("table");
