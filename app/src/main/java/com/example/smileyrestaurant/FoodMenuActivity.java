@@ -42,7 +42,7 @@ public class FoodMenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_food_menu);
         setContentView(R.layout.activity_food_menu);
-
+//shit i done something wrong
 //        mActivityFoodMenuBinding = DataBindingUtil.setContentView(this, R.layout.activity_food_menu);
         mActivityFoodMenuBinding = DataBindingUtil.setContentView(this, R.layout.activity_food_menu);
 
