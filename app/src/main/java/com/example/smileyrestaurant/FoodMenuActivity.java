@@ -49,13 +49,13 @@ public class FoodMenuActivity extends AppCompatActivity {
         tablename = getIntent().getStringExtra("table");
         ordernumber = getIntent().getStringExtra("ordernumber");
 
-//        count1 = 0;
-//        count2 = 0;
-//        count3 = 0;
-//        count4 = 0;
-//        count5 = 0;
-//        count6 = 0;
-//        count7 = 0;
+        count1 = 0;
+        count2 = 0;
+        count3 = 0;
+        count4 = 0;
+        count5 = 0;
+        count6 = 0;
+        count7 = 0;
         count8 = 0;
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
