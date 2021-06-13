@@ -14,8 +14,8 @@ public class Homepage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
         
-        Button button = findViewById(R.id.button); //AddOrder 
-        Button button2 = findViewById(R.id.button2); //Kitchen
+        Button button = findViewById(R.id.button); //AddOrder Button
+        Button button2 = findViewById(R.id.button2); //Kitchen Button
 
         button.setOnClickListener(v -> {
             Intent intent1 = new Intent(Homepage.this,AddOrder.class);
