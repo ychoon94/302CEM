@@ -3,12 +3,12 @@ package com.example.smileyrestaurant.model;
 public class Staff {
     private String username;
     private String password;
-    private String roles;
+    private String role;
 
-    public Staff(String username, String password, String roles){
+    public Staff(String username, String password, String role){
         this.username = username;
         this.password = password;
-        this.roles = roles;
+        this.role = role;
     }
 
     public Staff(){
@@ -31,11 +31,11 @@ public class Staff {
         this.password = password;
     }
 
-    public String getRoles() {
-        return roles;
+    public String getRole() {
+        return role;
     }
 
-    public void setRoles(String roles) {
-        this.roles = roles;
+    public void setRole(String role) {
+        this.role = role;
     }
 }

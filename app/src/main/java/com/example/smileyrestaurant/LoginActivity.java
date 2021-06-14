@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.example.smileyrestaurant.databinding.ActivityLoginBinding;
 import com.example.smileyrestaurant.model.Staff;
+import com.example.smileyrestaurant.welcome.AssignTableActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -28,8 +29,8 @@ import java.util.List;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private static final String TAG = "EmailPassword";
-    private static FirebaseAuth mAuth;
+//    private static final String TAG = "EmailPassword";
+//    private static FirebaseAuth mAuth;
 
     private ActivityLoginBinding mActivityLoginBinding;
 
@@ -59,11 +60,41 @@ public class LoginActivity extends AppCompatActivity {
                         Staff staff = documentSnapshot.toObject(Staff.class);
 
                         if (staff.getPassword().equals(mActivityLoginBinding.editTextPassword.getText().toString())){
-                            Toast.makeText(getApplicationContext(), "Welcome to Smiley Restaurant :)", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                            startActivity(intent);
-                            mActivityLoginBinding.editTextUsername.setText("");
-                            mActivityLoginBinding.editTextPassword.setText("");
+
+                            if (staff.getRole().equals("welcome")){
+                                Log.d("AAAAAAAAAAAAAAAAAAAAAAAAA", staff.getRole());
+//                                Toast.makeText(getApplicationContext(), "Welcome to Smiley Restaurant :)", Toast.LENGTH_SHORT).show();
+                                Intent welcome = new Intent(LoginActivity.this, AssignTableActivity.class);
+                                startActivity(welcome);
+                                mActivityLoginBinding.editTextUsername.setText("");
+                                mActivityLoginBinding.editTextPassword.setText("");
+                                mActivityLoginBinding.progressBarLogin.setVisibility(View.INVISIBLE);
+                            }
+                              else if (staff.getRole().equals("servers")){
+                                Log.d("AAAAAAAAAAAAAAAAAAAAAAAAA", staff.getRole());
+                                Toast.makeText(getApplicationContext(), "Welcome to Smiley Restaurant :)", Toast.LENGTH_SHORT).show();
+                                Intent servers = new Intent(LoginActivity.this, MainActivity.class);
+                                startActivity(servers);
+                                mActivityLoginBinding.editTextUsername.setText("");
+                                mActivityLoginBinding.editTextPassword.setText("");
+                                mActivityLoginBinding.progressBarLogin.setVisibility(View.INVISIBLE);
+                            } else if (staff.getRole().equals("till")){
+                                Log.d("AAAAAAAAAAAAAAAAAAAAAAAAA", staff.getRole());
+                                Toast.makeText(getApplicationContext(), "Welcome to Smiley Restaurant :)", Toast.LENGTH_SHORT).show();
+                                Intent till = new Intent(LoginActivity.this, MainActivity.class);
+                                startActivity(till);
+                                mActivityLoginBinding.editTextUsername.setText("");
+                                mActivityLoginBinding.editTextPassword.setText("");
+                                mActivityLoginBinding.progressBarLogin.setVisibility(View.INVISIBLE);
+                            } else if (staff.getRole().equals("kitchen")){
+                                Log.d("AAAAAAAAAAAAAAAAAAAAAAAAA", staff.getRole());
+                                Toast.makeText(getApplicationContext(), "Welcome to Smiley Restaurant :)", Toast.LENGTH_SHORT).show();
+                                Intent kitchen = new Intent(LoginActivity.this, MainActivity.class);
+                                startActivity(kitchen);
+                                mActivityLoginBinding.editTextUsername.setText("");
+                                mActivityLoginBinding.editTextPassword.setText("");
+                                mActivityLoginBinding.progressBarLogin.setVisibility(View.INVISIBLE);
+                            }
                         } else {
                             Toast.makeText(LoginActivity.this, "Password Mismatching,", Toast.LENGTH_SHORT).show();
                         }
