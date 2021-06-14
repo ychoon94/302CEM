@@ -26,5 +26,5 @@ public class Homepage extends AppCompatActivity {
             Intent intent2 = new Intent(Homepage.this, Kitchen.class);
             startActivity(intent2);
         });
-    }
+    }//Error
 }
