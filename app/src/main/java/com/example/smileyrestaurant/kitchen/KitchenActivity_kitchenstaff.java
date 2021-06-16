@@ -146,6 +146,24 @@ public class KitchenActivity_kitchenstaff extends AppCompatActivity {
                                     Log.d("AAAAAAAAAAAAAAAAAAAAAAA", foodid2);
                                 }
                             }
+                            if (status1.equals("ready")){
+                                mActivityKitchen2Binding.textviewFoodname1.setVisibility(GONE);
+                                mActivityKitchen2Binding.textViewQuantity1.setVisibility(GONE);
+                                mActivityKitchen2Binding.buttonReady1.setVisibility(GONE);
+                                mActivityKitchen2Binding.textViewOrdertime1.setVisibility(GONE);
+                            }
+                            if (status2.equals("ready")){
+                                mActivityKitchen2Binding.textViewFoodname2.setVisibility(GONE);
+                                mActivityKitchen2Binding.textViewQuantity2.setVisibility(GONE);
+                                mActivityKitchen2Binding.buttonReady2.setVisibility(GONE);
+                                mActivityKitchen2Binding.textViewOrdertime2.setVisibility(GONE);
+                            }
+                            if (status3.equals("ready")){
+                                mActivityKitchen2Binding.textViewFoodname3.setVisibility(GONE);
+                                mActivityKitchen2Binding.textViewQuantity3.setVisibility(GONE);
+                                mActivityKitchen2Binding.buttonReady3.setVisibility(GONE);
+                                mActivityKitchen2Binding.textViewOrdertime3.setVisibility(GONE);
+                            }
                         }
                     }
                 }
@@ -250,6 +268,24 @@ public class KitchenActivity_kitchenstaff extends AppCompatActivity {
                                     foodid5 = values8.get(1).toString();
                                     Log.d("AAAAAAAAAAAAAAAAAAAAAAA2", foodid5);
                                 }
+                            }
+                            if (status4.equals("ready")){
+                                mActivityKitchen2Binding.textViewFoodname4.setVisibility(GONE);
+                                mActivityKitchen2Binding.textViewQuantity4.setVisibility(GONE);
+                                mActivityKitchen2Binding.buttonReady4.setVisibility(GONE);
+                                mActivityKitchen2Binding.textViewOrdertime4.setVisibility(GONE);
+                            }
+                            if (status5.equals("ready")){
+                                mActivityKitchen2Binding.textViewFoodname5.setVisibility(GONE);
+                                mActivityKitchen2Binding.textViewQuantity5.setVisibility(GONE);
+                                mActivityKitchen2Binding.buttonReady5.setVisibility(GONE);
+                                mActivityKitchen2Binding.textViewOrdertime5.setVisibility(GONE);
+                            }
+                            if (status6.equals("ready")){
+                                mActivityKitchen2Binding.textViewFoodname6.setVisibility(GONE);
+                                mActivityKitchen2Binding.textViewQuantity6.setVisibility(GONE);
+                                mActivityKitchen2Binding.buttonReady6.setVisibility(GONE);
+                                mActivityKitchen2Binding.textViewOrdertime6.setVisibility(GONE);
                             }
                         }
                     }
