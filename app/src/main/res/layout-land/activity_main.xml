@@ -246,6 +246,7 @@
                             android:layout_width="192dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:textSize="22sp"
                             android:text="" />
 
                         <TextView
@@ -253,6 +254,7 @@
                             android:layout_width="192dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:textSize="22sp"
                             android:text="" />
 
                         <TextView
@@ -260,6 +262,7 @@
                             android:layout_width="192dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:textSize="22sp"
                             android:text="" />
                     </LinearLayout>
 
@@ -274,6 +277,7 @@
                             android:layout_width="192dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:textSize="22sp"
                             android:text="" />
 
                         <TextView
@@ -281,6 +285,7 @@
                             android:layout_width="192dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:textSize="22sp"
                             android:text="" />
 
                         <TextView
@@ -288,6 +293,7 @@
                             android:layout_width="192dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:textSize="22sp"
                             android:text="" />
                     </LinearLayout>
 
