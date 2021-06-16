@@ -296,9 +296,9 @@ public class FoodMenuActivity extends AppCompatActivity {
         mDatabase.child("orderlist").child(ordernumber).child("tablenumber").setValue(tablename);
         mDatabase.child("orderlist").child(ordernumber).child("status").setValue("placed");
         // new database for cashier ################################
-        mDatabase.child("bills").child(tablename).child("food").child("1").child("name").setValue(mActivityFoodMenuBinding.buttonFood1.getText().toString());
-        mDatabase.child("bills").child(tablename).child("food").child("1").child("price").setValue(price1);
-        mDatabase.child("bills").child(tablename).child("food").child("1").child("quantity").setValue(count1);
+        mDatabase.child("bills").child(tablename).child("1").child("name").setValue(mActivityFoodMenuBinding.buttonFood1.getText().toString());
+        mDatabase.child("bills").child(tablename).child("1").child("price").setValue(price1);
+        mDatabase.child("bills").child(tablename).child("1").child("quantity").setValue(count1);
     }
 
     public void addtoorder2(View view) {
@@ -310,9 +310,9 @@ public class FoodMenuActivity extends AppCompatActivity {
         mDatabase.child("orderlist").child(ordernumber).child("tablenumber").setValue(tablename);
         mDatabase.child("orderlist").child(ordernumber).child("status").setValue("placed");
         // new database for cashier ################################
-        mDatabase.child("bills").child(tablename).child("food").child("2").child("name").setValue(mActivityFoodMenuBinding.buttonFood2.getText().toString());
-        mDatabase.child("bills").child(tablename).child("food").child("2").child("price").setValue(price2);
-        mDatabase.child("bills").child(tablename).child("food").child("2").child("quantity").setValue(count2);
+        mDatabase.child("bills").child(tablename).child("2").child("name").setValue(mActivityFoodMenuBinding.buttonFood2.getText().toString());
+        mDatabase.child("bills").child(tablename).child("2").child("price").setValue(price2);
+        mDatabase.child("bills").child(tablename).child("2").child("quantity").setValue(count2);
     }
 
     public void addtoorder3(View view) {
@@ -324,9 +324,9 @@ public class FoodMenuActivity extends AppCompatActivity {
         mDatabase.child("orderlist").child(ordernumber).child("tablenumber").setValue(tablename);
         mDatabase.child("orderlist").child(ordernumber).child("status").setValue("placed");
         // new database for cashier ################################
-        mDatabase.child("bills").child(tablename).child("food").child("3").child("name").setValue(mActivityFoodMenuBinding.buttonFood3.getText().toString());
-        mDatabase.child("bills").child(tablename).child("food").child("3").child("price").setValue(price3);
-        mDatabase.child("bills").child(tablename).child("food").child("3").child("quantity").setValue(count3);
+        mDatabase.child("bills").child(tablename).child("3").child("name").setValue(mActivityFoodMenuBinding.buttonFood3.getText().toString());
+        mDatabase.child("bills").child(tablename).child("3").child("price").setValue(price3);
+        mDatabase.child("bills").child(tablename).child("3").child("quantity").setValue(count3);
     }
 
     public void addtoorder4(View view) {
@@ -338,9 +338,9 @@ public class FoodMenuActivity extends AppCompatActivity {
         mDatabase.child("orderlist").child(ordernumber).child("tablenumber").setValue(tablename);
         mDatabase.child("orderlist").child(ordernumber).child("status").setValue("placed");
         // new database for cashier ################################
-        mDatabase.child("bills").child(tablename).child("food").child("4").child("name").setValue(mActivityFoodMenuBinding.buttonFood4.getText().toString());
-        mDatabase.child("bills").child(tablename).child("food").child("4").child("price").setValue(price4);
-        mDatabase.child("bills").child(tablename).child("food").child("4").child("quantity").setValue(count4);
+        mDatabase.child("bills").child(tablename).child("4").child("name").setValue(mActivityFoodMenuBinding.buttonFood4.getText().toString());
+        mDatabase.child("bills").child(tablename).child("4").child("price").setValue(price4);
+        mDatabase.child("bills").child(tablename).child("4").child("quantity").setValue(count4);
     }
 
     public void addtoorder5(View view) {
@@ -352,9 +352,9 @@ public class FoodMenuActivity extends AppCompatActivity {
         mDatabase.child("orderlist").child(ordernumber).child("tablenumber").setValue(tablename);
         mDatabase.child("orderlist").child(ordernumber).child("status").setValue("placed");
         // new database for cashier ################################
-        mDatabase.child("bills").child(tablename).child("food").child("5").child("name").setValue(mActivityFoodMenuBinding.buttonFood5.getText().toString());
-        mDatabase.child("bills").child(tablename).child("food").child("5").child("price").setValue(price5);
-        mDatabase.child("bills").child(tablename).child("food").child("5").child("quantity").setValue(count5);
+        mDatabase.child("bills").child(tablename).child("5").child("name").setValue(mActivityFoodMenuBinding.buttonFood5.getText().toString());
+        mDatabase.child("bills").child(tablename).child("5").child("price").setValue(price5);
+        mDatabase.child("bills").child(tablename).child("5").child("quantity").setValue(count5);
     }
 
     public void addtoorder6(View view) {
@@ -366,9 +366,9 @@ public class FoodMenuActivity extends AppCompatActivity {
         mDatabase.child("orderlist").child(ordernumber).child("tablenumber").setValue(tablename);
         mDatabase.child("orderlist").child(ordernumber).child("status").setValue("placed");
         // new database for cashier ################################
-        mDatabase.child("bills").child(tablename).child("food").child("6").child("name").setValue(mActivityFoodMenuBinding.buttonFood6.getText().toString());
-        mDatabase.child("bills").child(tablename).child("food").child("6").child("price").setValue(price6);
-        mDatabase.child("bills").child(tablename).child("food").child("6").child("quantity").setValue(count6);
+        mDatabase.child("bills").child(tablename).child("6").child("name").setValue(mActivityFoodMenuBinding.buttonFood6.getText().toString());
+        mDatabase.child("bills").child(tablename).child("6").child("price").setValue(price6);
+        mDatabase.child("bills").child(tablename).child("6").child("quantity").setValue(count6);
     }
 
     public void addtoorder7(View view) {
@@ -380,9 +380,9 @@ public class FoodMenuActivity extends AppCompatActivity {
         mDatabase.child("orderlist").child(ordernumber).child("tablenumber").setValue(tablename);
         mDatabase.child("orderlist").child(ordernumber).child("status").setValue("placed");
         // new database for cashier ################################
-        mDatabase.child("bills").child(tablename).child("food").child("7").child("name").setValue(mActivityFoodMenuBinding.buttonFood7.getText().toString());
-        mDatabase.child("bills").child(tablename).child("food").child("7").child("price").setValue(price7);
-        mDatabase.child("bills").child(tablename).child("food").child("7").child("quantity").setValue(count7);
+        mDatabase.child("bills").child(tablename).child("7").child("name").setValue(mActivityFoodMenuBinding.buttonFood7.getText().toString());
+        mDatabase.child("bills").child(tablename).child("7").child("price").setValue(price7);
+        mDatabase.child("bills").child(tablename).child("7").child("quantity").setValue(count7);
     }
 
     public void addtoorder8(View view) {
@@ -394,9 +394,9 @@ public class FoodMenuActivity extends AppCompatActivity {
         mDatabase.child("orderlist").child(ordernumber).child("tablenumber").setValue(tablename);
         mDatabase.child("orderlist").child(ordernumber).child("status").setValue("placed");
         // new database for cashier ################################
-        mDatabase.child("bills").child(tablename).child("food").child("8").child("name").setValue(mActivityFoodMenuBinding.buttonFood8.getText().toString());
-        mDatabase.child("bills").child(tablename).child("food").child("8").child("price").setValue(price8);
-        mDatabase.child("bills").child(tablename).child("food").child("8").child("quantity").setValue(count8);
+        mDatabase.child("bills").child(tablename).child("8").child("name").setValue(mActivityFoodMenuBinding.buttonFood8.getText().toString());
+        mDatabase.child("bills").child(tablename).child("8").child("price").setValue(price8);
+        mDatabase.child("bills").child(tablename).child("8").child("quantity").setValue(count8);
     }
 
     public void addtoorder9(View view) {
