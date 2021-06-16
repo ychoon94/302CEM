@@ -321,7 +321,7 @@
             app:layout_constraintVertical_bias="0.238" />
 
         <EditText
-            android:id="@+id/editTextNumberDecimal"
+            android:id="@+id/editTextNumberDecimal_payment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
@@ -351,14 +351,14 @@
             android:id="@+id/textView_change"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:layout_marginBottom="44dp"
             android:text=" "
             android:textSize="40sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal"
-            app:layout_constraintVertical_bias="0.291" />
+            app:layout_constraintEnd_toStartOf="@+id/button11"
+            app:layout_constraintHorizontal_bias="0.028"
+            app:layout_constraintStart_toEndOf="@+id/textView_change_text" />
 
         <TextView
             android:id="@+id/hidden_price1"
