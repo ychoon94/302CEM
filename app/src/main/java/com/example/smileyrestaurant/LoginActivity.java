@@ -38,6 +38,7 @@ public class LoginActivity extends AppCompatActivity {
         mUsernameField = findViewById(R.id.username_edit_text);
         mPasswordField = findViewById(R.id.password_edit_text);
 
+        //Start Login Activity
         mLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
