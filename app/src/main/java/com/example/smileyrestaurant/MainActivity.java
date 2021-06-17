@@ -40,13 +40,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //error here
 
         mActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
-
-//        mDatabase = FirebaseDatabase.getInstance().getReference();
 
         mDatabase.child("orderlist").child("1").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
             @Override
@@ -55,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
                     Log.e("firebase", "Error getting data", task.getException());
                 }
                 else {
-                    //merge from carmen
                     for (DataSnapshot data : task.getResult().getChildren()) {
                         if (data.getKey().equals("tablenumber")) {
                             String tablename = data.getValue().toString();

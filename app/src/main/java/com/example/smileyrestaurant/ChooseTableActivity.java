@@ -1,5 +1,6 @@
 package com.example.smileyrestaurant;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
@@ -11,15 +12,24 @@ import android.util.Log;
 import android.view.View;
 
 import com.example.smileyrestaurant.databinding.ActivityChooseTableBinding;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import org.jetbrains.annotations.NotNull;
 
 public class ChooseTableActivity extends AppCompatActivity {
 
     private ActivityChooseTableBinding mActivityChooseTableBinding;
-//    private String ordernumber;
+
     private Integer ordernumber;
 
     SharedPreferences mSharedPreferences;
     public static final String MyPREFERENCES = "MyPrefs";
+
+    private DatabaseReference mDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +56,79 @@ public class ChooseTableActivity extends AppCompatActivity {
 //        ordernumber = getIntent().getStringExtra("ordernumber");
 
         mActivityChooseTableBinding = DataBindingUtil.setContentView(this, R.layout.activity_choose_table);
+
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+
+        mDatabase.child("tableoccupied").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+            @Override
+            public void onComplete(@NonNull @NotNull Task<DataSnapshot> task) {
+                if (!task.isSuccessful()) {
+                    Log.e("firebase", "Error getting data", task.getException());
+                } else {
+                    for (DataSnapshot data : task.getResult().getChildren()){
+                        if (data.getKey().equals("Table 1")){
+                            if (data.getValue().equals("0")){
+                                overridePendingTransition(0,0);
+                                mActivityChooseTableBinding.buttonTable1.setVisibility(View.INVISIBLE);
+                            }
+                        }
+                        if (data.getKey().equals("Table 2")){
+                            if (data.getValue().equals("0")){
+                                overridePendingTransition(0,0);
+                                mActivityChooseTableBinding.buttonTable2.setVisibility(View.INVISIBLE);
+                            }
+                        }
+                        if (data.getKey().equals("Table 3")){
+                            if (data.getValue().equals("0")){
+                                overridePendingTransition(0,0);
+                                mActivityChooseTableBinding.buttonTable3.setVisibility(View.INVISIBLE);
+                            }
+                        }
+                        if (data.getKey().equals("Table 4")){
+                            if (data.getValue().equals("0")){
+                                overridePendingTransition(0,0);
+                                mActivityChooseTableBinding.buttonTable4.setVisibility(View.INVISIBLE);
+                            }
+                        }
+                        if (data.getKey().equals("Table 5")){
+                            if (data.getValue().equals("0")){
+                                overridePendingTransition(0,0);
+                                mActivityChooseTableBinding.buttonTable5.setVisibility(View.INVISIBLE);
+                            }
+                        }
+                        if (data.getKey().equals("Table 6")){
+                            if (data.getValue().equals("0")){
+                                mActivityChooseTableBinding.buttonTable6.setVisibility(View.INVISIBLE);
+                            }
+                        }
+                        if (data.getKey().equals("Table 7")){
+                            if (data.getValue().equals("0")){
+                                overridePendingTransition(0,0);
+                                mActivityChooseTableBinding.buttonTable7.setVisibility(View.INVISIBLE);
+                            }
+                        }
+                        if (data.getKey().equals("Table 8")){
+                            if (data.getValue().equals("0")){
+                                overridePendingTransition(0,0);
+                                mActivityChooseTableBinding.buttonTable8.setVisibility(View.INVISIBLE);
+                            }
+                        }
+                        if (data.getKey().equals("Table 9")){
+                            if (data.getValue().equals("0")){
+                                overridePendingTransition(0,0);
+                                mActivityChooseTableBinding.buttonTable9.setVisibility(View.INVISIBLE);
+                            }
+                        }
+                        if (data.getKey().equals("Table 10")){
+                            if (data.getValue().equals("0")){
+                                overridePendingTransition(0,0);
+                                mActivityChooseTableBinding.buttonTable10.setVisibility(View.INVISIBLE);
+                            }
+                        }
+                    }
+                }
+            }
+        });
 
     }
 

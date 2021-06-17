@@ -110,7 +110,7 @@ public class KitchenActivity extends AppCompatActivity {
 //                }
 //            }
 //        });
-
+//
 //        mDatabase.child("orderlist").child("2").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
 //            @Override
 //            public void onComplete(@NonNull Task<DataSnapshot> task) {

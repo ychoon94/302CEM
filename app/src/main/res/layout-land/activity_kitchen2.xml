@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".kitchen.KitchenActivity_kitchenstaff">
+
+        <TextView
+            android:id="@+id/textView_kitchentitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_kitchen_title"
+            android:textSize="52sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.091" />
+
+
+        <TextView
+            android:id="@+id/textView_placedorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_placed_order"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.23" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="960dp"
+            android:layout_height="600dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_placedorder"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_food_text"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Food"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView_quantity_text"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Quantity"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView_spacer"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Update food status"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView_ordertime_text"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Order Time"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/myLinearLayoutVertical"
+                        android:layout_width="240dp"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textview_foodname1"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/textView_foodname2"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/textView_foodname3"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="240dp"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView_quantity1"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/textView_quantity2"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/textView_quantity3"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="22sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="240dp"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/button_ready1"
+                            android:layout_width="240dp"
+                            android:layout_height="66.6dp"
+                            android:onClick="readyfood1"
+                            android:text="Ready"
+                            android:textSize="22sp" />
+
+                        <Button
+                            android:id="@+id/button_ready2"
+                            android:layout_width="240dp"
+                            android:layout_height="66.6dp"
+                            android:onClick="readyfood2"
+                            android:text="Ready"
+                            android:textSize="22sp" />
+
+                        <Button
+                            android:id="@+id/button_ready3"
+                            android:layout_width="240dp"
+                            android:layout_height="66.6dp"
+                            android:onClick="readyfood3"
+                            android:text="Ready"
+                            android:textSize="22sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="240dp"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView_ordertime1"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/textView_ordertime2"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/textView_ordertime3"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="22sp" />
+
+                    </LinearLayout>
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/textView_ordertime1"-->
+<!--                        android:layout_width="240dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text=""-->
+<!--                        android:textSize="30sp" />-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/button_ready1"-->
+<!--                        android:layout_width="240dp"-->
+<!--                        android:layout_height="100dp"-->
+<!--                        android:onClick="readyorder1"-->
+<!--                        android:text="Ready"-->
+<!--                        android:textSize="22sp" />-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="240dp"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView_foodname4"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="22sp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/textView_foodname5"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="22sp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/textView_foodname6"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="22sp"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="240dp"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView_quantity4"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="22sp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/textView_quantity5"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="22sp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/textView_quantity6"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="22sp"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="240dp"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/button_ready4"
+                            android:layout_width="240dp"
+                            android:layout_height="66.6dp"
+                            android:onClick="readyfood4"
+                            android:text="Ready"
+                            android:textSize="22sp" />
+
+                        <Button
+                            android:id="@+id/button_ready5"
+                            android:layout_width="240dp"
+                            android:layout_height="66.6dp"
+                            android:onClick="readyfood5"
+                            android:text="Ready"
+                            android:textSize="22sp" />
+
+                        <Button
+                            android:id="@+id/button_ready6"
+                            android:layout_width="240dp"
+                            android:layout_height="66.6dp"
+                            android:onClick="readyfood6"
+                            android:text="Ready"
+                            android:textSize="22sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="240dp"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView_ordertime4"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/textView_ordertime5"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/textView_ordertime6"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="22sp" />
+
+                    </LinearLayout>
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/textView_ordertime2"-->
+<!--                        android:layout_width="240dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text=""-->
+<!--                        android:textSize="30sp" />-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/button_ready2"-->
+<!--                        android:layout_width="240dp"-->
+<!--                        android:layout_height="100dp"-->
+<!--                        android:onClick="readyorder2"-->
+<!--                        android:text="Ready"-->
+<!--                        android:textSize="22sp" />-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="57dp"
+            android:layout_height="48dp"
+            android:background="#000000"
+            android:onClick="gobackhome"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/textView_placedorder"
+            app:layout_constraintEnd_toStartOf="@+id/textView_kitchentitle"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.666"
+            app:srcCompat="@drawable/abc_vector_test" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

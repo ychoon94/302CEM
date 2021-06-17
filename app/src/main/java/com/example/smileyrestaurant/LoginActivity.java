@@ -12,19 +12,34 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.smileyrestaurant.databinding.ActivityLoginBinding;
+import com.example.smileyrestaurant.kitchen.KitchenActivity_kitchenstaff;
+import com.example.smileyrestaurant.model.Staff;
+import com.example.smileyrestaurant.till.TillActivity;
+import com.example.smileyrestaurant.welcome.AssignTableActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.List;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private static final String TAG = "EmailPassword";
-    private static FirebaseAuth mAuth;
+//    private static final String TAG = "EmailPassword";
+//    private static FirebaseAuth mAuth;
 
     private ActivityLoginBinding mActivityLoginBinding;
+
+//    List<Staff> staffList;
+    FirebaseFirestore db;
+
+    public static final String COLLECTION_NAME_KEY = "STAFFS";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,91 +48,61 @@ public class LoginActivity extends AppCompatActivity {
 
         mActivityLoginBinding = DataBindingUtil.setContentView(this, R.layout.activity_login);
 
-        //initialize Firebase Auth
-        mAuth = FirebaseAuth.getInstance();
-        //this is oncreate function
+        db = FirebaseFirestore.getInstance();
     }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        //check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        if (currentUser != null){
-            reload();
-        }
-    }
-
-//    private void createAccount(String email, String password) {
-//        // [START create_user_with_email]
-//        mAuth.createUserWithEmailAndPassword(email, password)
-//                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-//                    @Override
-//                    public void onComplete(@NonNull Task<AuthResult> task) {
-//                        if (task.isSuccessful()) {
-//                            // Sign in success, update UI with the signed-in user's information
-//                            Log.d(TAG, "createUserWithEmail:success");
-//                            Toast.makeText(LoginActivity.this, "Create Success.",
-//                                    Toast.LENGTH_SHORT).show();
-//                            FirebaseUser user = mAuth.getCurrentUser();
-//                            updateUI(user);
-//                        } else {
-//                            // If sign in fails, display a message to the user.
-//                            Log.w(TAG, "createUserWithEmail:failure", task.getException());
-//                            Toast.makeText(LoginActivity.this, "Authentication failed.",
-//                                    Toast.LENGTH_SHORT).show();
-//                            updateUI(null);
-//                        }
-//                    }
-//                });
-//        // [END create_user_with_email]
-//    }
-
-
-    private void signIn(String email, String password) {
-        // [START sign_in_with_email]
-        mAuth.signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
-                            Log.d(TAG, "signInWithEmail:success");
-                            Toast.makeText(LoginActivity.this, "Authentication Login Success.",
-                                    Toast.LENGTH_SHORT).show();
-                            FirebaseUser user = mAuth.getCurrentUser();
-                            homepage();
-                            updateUI(user);
-                        } else {
-                            // If sign in fails, display a message to the user.
-                            Log.w(TAG, "signInWithEmail:failure", task.getException());
-                            Toast.makeText(LoginActivity.this, "Authentication failed.",
-                                    Toast.LENGTH_SHORT).show();
-                            updateUI(null);
-                        }
-                    }
-                });
-        // [END sign_in_with_email]
-    }
-
-    private void reload() { }
-
-    private void updateUI(FirebaseUser user) {
-
-    }
-
-//    public void createAccount(View view) {
-//        createAccount(mActivityLoginBinding.editTextUsername.getText().toString(), mActivityLoginBinding.editTextPassword.getText().toString());
-//
-//    }
 
     public void loginAccount(View view) {
-        signIn(mActivityLoginBinding.editTextUsername.getText().toString(), mActivityLoginBinding.editTextPassword.getText().toString());
-    }
 
-    public void homepage() {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-        finish();
+        if (!mActivityLoginBinding.editTextUsername.getText().toString().equals("") && !mActivityLoginBinding.editTextPassword.getText().toString().equals("")){
+            DocumentReference docRef = db.collection(COLLECTION_NAME_KEY).document(mActivityLoginBinding.editTextUsername.getText().toString());
+            docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                @Override
+                public void onSuccess(DocumentSnapshot documentSnapshot) {
+                    if (documentSnapshot.exists()){
+                        Staff staff = documentSnapshot.toObject(Staff.class);
+
+                        if (staff.getPassword().equals(mActivityLoginBinding.editTextPassword.getText().toString())){
+
+                            if (staff.getRole().equals("welcome")){
+//                                Toast.makeText(getApplicationContext(), "Welcome to Smiley Restaurant :)", Toast.LENGTH_SHORT).show();
+                                Intent welcome = new Intent(LoginActivity.this, AssignTableActivity.class);
+                                startActivity(welcome);
+                                mActivityLoginBinding.editTextUsername.setText("");
+                                mActivityLoginBinding.editTextPassword.setText("");
+                                mActivityLoginBinding.progressBarLogin.setVisibility(View.INVISIBLE);
+                            }
+                              else if (staff.getRole().equals("servers")){
+                                Toast.makeText(getApplicationContext(), "Welcome to Smiley Restaurant :)", Toast.LENGTH_SHORT).show();
+                                Intent servers = new Intent(LoginActivity.this, MainActivity.class);
+                                startActivity(servers);
+                                mActivityLoginBinding.editTextUsername.setText("");
+                                mActivityLoginBinding.editTextPassword.setText("");
+                                mActivityLoginBinding.progressBarLogin.setVisibility(View.INVISIBLE);
+                            } else if (staff.getRole().equals("till")){
+                                Toast.makeText(getApplicationContext(), "Welcome to Smiley Restaurant :)", Toast.LENGTH_SHORT).show();
+                                Intent till = new Intent(LoginActivity.this, TillActivity.class);
+                                startActivity(till);
+                                mActivityLoginBinding.editTextUsername.setText("");
+                                mActivityLoginBinding.editTextPassword.setText("");
+                                mActivityLoginBinding.progressBarLogin.setVisibility(View.INVISIBLE);
+                            } else if (staff.getRole().equals("kitchen")){
+                                Toast.makeText(getApplicationContext(), "Welcome to Smiley Restaurant :)", Toast.LENGTH_SHORT).show();
+                                Intent kitchen = new Intent(LoginActivity.this, KitchenActivity_kitchenstaff.class);
+                                startActivity(kitchen);
+                                mActivityLoginBinding.editTextUsername.setText("");
+                                mActivityLoginBinding.editTextPassword.setText("");
+                                mActivityLoginBinding.progressBarLogin.setVisibility(View.INVISIBLE);
+                            }
+                        } else {
+                            Toast.makeText(LoginActivity.this, "Password Mismatching,", Toast.LENGTH_SHORT).show();
+                        }
+                    } else {
+                        Toast.makeText(LoginActivity.this, "Please check your username!", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });
+        } else {
+            Toast.makeText(this, "Username or Password cannot be empty.", Toast.LENGTH_SHORT).show();
+        }
     }
 }
