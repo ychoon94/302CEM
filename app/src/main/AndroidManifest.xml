@@ -9,13 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmileyRestaurant">
-        <activity android:name=".kitchen.KitchenActivity_kitchenstaff"
+        <activity android:name=".admin.UpdateMenuActivity"></activity>
+        <activity android:name=".admin.AccountActivity" />
+        <activity android:name=".admin.AdminActivity" />
+        <activity
+            android:name=".kitchen.KitchenActivity_kitchenstaff"
             android:screenOrientation="landscape">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".till.TillActivity"
@@ -37,11 +43,13 @@
         <activity
             android:name=".FoodMenuActivity"
             android:screenOrientation="landscape">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".LoginActivity"
