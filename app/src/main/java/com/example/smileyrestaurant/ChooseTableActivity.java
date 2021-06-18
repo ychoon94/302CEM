@@ -33,24 +33,24 @@ public class ChooseTableActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_choose_table);
-//
-//        SharedPreferences mSharedPreference = this.getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
-//        ordernumber = mSharedPreference.getInt("ordernumber", 0);
-//
-//
-//        if ((ordernumber == 0) || (ordernumber >= 2)) {
-//            ordernumber = 0;
-//        }
-//        ordernumber = ordernumber + 1;
-//
-//        //shared preferences for the ordernumber
-//        mSharedPreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
-//        SharedPreferences.Editor editor = mSharedPreferences.edit();
-//
-//        editor.putInt("ordernumber", ordernumber);
-//        editor.commit();
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_choose_table);
+
+        SharedPreferences mSharedPreference = this.getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+        ordernumber = mSharedPreference.getInt("ordernumber", 0);
+
+
+        if ((ordernumber == 0) || (ordernumber >= 2)) {
+            ordernumber = 0;
+        }
+        ordernumber = ordernumber + 1;
+
+        //shared preferences for the ordernumber
+        mSharedPreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = mSharedPreferences.edit();
+
+        editor.putInt("ordernumber", ordernumber);
+        editor.commit();
 
 //        ordernumber = getIntent().getStringExtra("ordernumber");
 
