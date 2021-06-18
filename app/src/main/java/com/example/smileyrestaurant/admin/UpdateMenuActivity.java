@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.smileyrestaurant.R;
+
 public class UpdateMenuActivity extends AppCompatActivity {
 
     @Override
