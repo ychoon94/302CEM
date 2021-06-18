@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.smileyrestaurant.admin.AdminActivity;
 import com.example.smileyrestaurant.databinding.ActivityLoginBinding;
 import com.example.smileyrestaurant.kitchen.KitchenActivity_kitchenstaff;
 import com.example.smileyrestaurant.model.Staff;
@@ -89,6 +90,13 @@ public class LoginActivity extends AppCompatActivity {
                                 Toast.makeText(getApplicationContext(), "Welcome to Smiley Restaurant :)", Toast.LENGTH_SHORT).show();
                                 Intent kitchen = new Intent(LoginActivity.this, KitchenActivity_kitchenstaff.class);
                                 startActivity(kitchen);
+                                mActivityLoginBinding.editTextUsername.setText("");
+                                mActivityLoginBinding.editTextPassword.setText("");
+                                mActivityLoginBinding.progressBarLogin.setVisibility(View.INVISIBLE);
+                            } else if (staff.getRole().equals("admin")){
+                                Toast.makeText(getApplicationContext(), "Welcome to Smiley Restaurant :)", Toast.LENGTH_SHORT).show();
+                                Intent admin = new Intent(LoginActivity.this, AdminActivity.class);
+                                startActivity(admin);
                                 mActivityLoginBinding.editTextUsername.setText("");
                                 mActivityLoginBinding.editTextPassword.setText("");
                                 mActivityLoginBinding.progressBarLogin.setVisibility(View.INVISIBLE);
