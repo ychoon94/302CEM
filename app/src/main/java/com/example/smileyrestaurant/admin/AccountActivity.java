@@ -50,7 +50,7 @@ public class AccountActivity extends AppCompatActivity implements AdapterView.On
         //future.get() blocks on response
         List<QueryDocumentSnapshot> documents = future.get().getDocuments();
         for (QueryDocumentSnapshot document : documents) {
-
+            // TODO finish up logics of tabulating data from document
         }
 
         //Spinner intiation
