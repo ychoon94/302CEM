@@ -189,4 +189,7 @@ public class AccountActivity extends AppCompatActivity implements AdapterView.On
     public void savechange5(View view) {
         String text = spinner5.getSelectedItem().toString();
     }
+
+    public void registeraccount(View view) {
+    }
 }
