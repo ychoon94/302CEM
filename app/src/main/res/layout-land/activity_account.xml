@@ -43,7 +43,7 @@
                         android:layout_width="240dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Staff Name"
+                        android:text="User Role"
                         android:textSize="22sp"
                         android:textStyle="bold" />
 
@@ -52,7 +52,7 @@
                         android:layout_width="240dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="User Role"
+                        android:text="Change User Role"
                         android:textSize="22sp"
                         android:textStyle="bold" />
 
@@ -128,7 +128,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textview_staffname1"
+                            android:id="@+id/textview_userrole1"
                             android:layout_width="240dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -136,7 +136,7 @@
                             android:textSize="22sp" />
 
                         <TextView
-                            android:id="@+id/textview_staffname2"
+                            android:id="@+id/textview_userrole2"
                             android:layout_width="240dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -144,7 +144,7 @@
                             android:textSize="22sp" />
 
                         <TextView
-                            android:id="@+id/textView_staffname3"
+                            android:id="@+id/textView_userrole3"
                             android:layout_width="240dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -152,7 +152,7 @@
                             android:textSize="22sp" />
 
                         <TextView
-                            android:id="@+id/textView_staffname4"
+                            android:id="@+id/textView_userrole4"
                             android:layout_width="240dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -160,7 +160,7 @@
                             android:textSize="22sp" />
 
                         <TextView
-                            android:id="@+id/textView_staffname5"
+                            android:id="@+id/textView_userrole5"
                             android:layout_width="240dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -265,6 +265,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="Save Changes"
+                            android:onClick="savechange1"
                             android:textSize="22sp" />
 
                         <Button
@@ -273,6 +274,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="Save Change"
+                            android:onClick="savechange2"
                             android:textSize="22sp" />
 
                         <Button
@@ -281,6 +283,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="Save Change"
+                            android:onClick="savechange3"
                             android:textSize="22sp" />
 
                         <Button
@@ -289,6 +292,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="Save Change"
+                            android:onClick="savechange4"
                             android:textSize="22sp" />
 
                         <Button
@@ -297,6 +301,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="Save Change"
+                            android:onClick="savechange5"
                             android:textSize="22sp" />
 
                     </LinearLayout>
@@ -327,6 +332,7 @@
             android:layout_height="wrap_content"
             android:text="Register Account"
             android:onClick="registeraccount"
+            android:textSize="22sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/scrollView4"
