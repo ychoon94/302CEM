@@ -3,6 +3,7 @@ package com.example.smileyrestaurant.admin;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Adapter;
@@ -31,7 +32,7 @@ public class AccountActivity extends AppCompatActivity implements AdapterView.On
 
     ActivityAccountBinding mActivityAccountBinding;
 
-    List<String> userrole, userrole2, userrole3, userrole4, userrole5, userrole6;
+    List<String> userrole;
 
     FirebaseFirestore db;
 
@@ -191,5 +192,7 @@ public class AccountActivity extends AppCompatActivity implements AdapterView.On
     }
 
     public void registeraccount(View view) {
+        Intent registeraccount = new Intent(AccountActivity.this, RegisterAccountActivity.class);
+        startActivity(registeraccount);
     }
 }
