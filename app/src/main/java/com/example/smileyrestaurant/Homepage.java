@@ -19,12 +19,12 @@ public class Homepage extends AppCompatActivity {
 
         button.setOnClickListener(v -> {
             Intent intent1 = new Intent(Homepage.this,AddOrder.class);
-            startActivity(intent1);
+            startActivity(intent1); //homepage -> add order screen
         });
 
         button2.setOnClickListener(v -> {
             Intent intent2 = new Intent(Homepage.this, Kitchen.class);
-            startActivity(intent2);
+            startActivity(intent2); //homepage -> kitchen screen
         });
     }
 }
