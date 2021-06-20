@@ -16,7 +16,7 @@
             android:layout_marginBottom="36dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name"
+            android:hint="Insert Username"
             app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
             app:layout_constraintStart_toEndOf="@+id/textView_username_text" />
 
@@ -48,6 +48,7 @@
             android:layout_marginBottom="36dp"
             android:ems="10"
             android:inputType="textPassword"
+            android:hint="Insert Password"
             app:layout_constraintBottom_toTopOf="@+id/spinner_registerstaffrole"
             app:layout_constraintStart_toEndOf="@+id/textView_password_text" />
 
