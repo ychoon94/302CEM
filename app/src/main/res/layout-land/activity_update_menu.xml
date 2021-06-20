@@ -147,6 +147,7 @@
                             android:layout_width="240dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:visibility="invisible"
                             android:text=""
                             android:textSize="30sp" />
 
@@ -155,6 +156,7 @@
                             android:layout_width="240dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:visibility="invisible"
                             android:text=""
                             android:textSize="30sp" />
 
@@ -163,6 +165,7 @@
                             android:layout_width="240dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:visibility="invisible"
                             android:text=""
                             android:textSize="30sp" />
 
@@ -244,6 +247,7 @@
                             android:layout_width="240dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:visibility="invisible"
                             android:text=""
                             android:textSize="22sp" />
 
@@ -252,6 +256,7 @@
                             android:layout_width="240dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:visibility="invisible"
                             android:text=""
                             android:textSize="22sp" />
 
@@ -260,6 +265,7 @@
                             android:layout_width="240dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:visibility="invisible"
                             android:text=""
                             android:textSize="22sp" />
 
@@ -324,18 +330,21 @@
                             android:id="@+id/spinner9"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:visibility="invisible"
                             android:layout_weight="1" />
 
                         <Spinner
                             android:id="@+id/spinner10"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:visibility="invisible"
                             android:layout_weight="1" />
 
                         <Spinner
                             android:id="@+id/spinner11"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:visibility="invisible"
                             android:layout_weight="1" />
 
                     </LinearLayout>
@@ -426,6 +435,7 @@
                             android:layout_weight="1"
                             android:onClick="savechange9"
                             android:text="Save Change"
+                            android:visibility="invisible"
                             android:textSize="22sp" />
 
                         <Button
@@ -435,6 +445,7 @@
                             android:layout_weight="1"
                             android:onClick="savechange10"
                             android:text="Save Change"
+                            android:visibility="invisible"
                             android:textSize="22sp" />
 
                         <Button
@@ -444,6 +455,7 @@
                             android:layout_weight="1"
                             android:onClick="savechange11"
                             android:text="Save Change"
+                            android:visibility="invisible"
                             android:textSize="22sp" />
 
                     </LinearLayout>
