@@ -8,6 +8,480 @@
         android:layout_height="match_parent"
         tools:context=".admin.UpdateMenuActivity">
 
+        <ScrollView
+            android:id="@+id/scrollView4"
+            android:layout_width="960dp"
+            android:layout_height="600dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.84">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_userid_text"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Food Name"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView_staffname_text"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Food status"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView_userrole_text"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Change Food Status"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView_ordertime_text"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=" "
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayoutFoodName"
+                        android:layout_width="240dp"
+                        android:layout_height="1000dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView_foodname_1"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView_foodname_2"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView_foodname_3"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView_foodname_4"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView_foodname_5"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView_foodname_6"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView_foodname_7"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView_foodname_8"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView_foodname_9"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView_foodname_10"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView_foodname_11"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="30sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayoutFoodStatus"
+                        android:layout_width="240dp"
+                        android:layout_height="1000dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textview_foodstatus_1"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/textview_foodstatus_2"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/textView_foodstatus_3"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/textView_foodstatus_4"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/textView_foodstatus_5"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/textView_foodstatus_6"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/textView_foodstatus_7"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/textView_foodstatus_8"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/textView_foodstatus_9"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/textView_foodstatus_10"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/textView_foodstatus_11"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="22sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayoutUserRole"
+                        android:layout_width="240dp"
+                        android:layout_height="1000dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <Spinner
+                            android:id="@+id/spinner1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:id="@+id/spinner2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:id="@+id/spinner3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:id="@+id/spinner4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:id="@+id/spinner5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:id="@+id/spinner6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:id="@+id/spinner7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:id="@+id/spinner8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:id="@+id/spinner9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:id="@+id/spinner10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:id="@+id/spinner11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayoutSaveChange"
+                        android:layout_width="240dp"
+                        android:layout_height="1000dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/button_savechange1"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="savechange1"
+                            android:text="Save Changes"
+                            android:textSize="22sp" />
+
+                        <Button
+                            android:id="@+id/button_savechange2"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="savechange2"
+                            android:text="Save Change"
+                            android:textSize="22sp" />
+
+                        <Button
+                            android:id="@+id/button_savechange3"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="savechange3"
+                            android:text="Save Change"
+                            android:textSize="22sp" />
+
+                        <Button
+                            android:id="@+id/button_savechange4"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="savechange4"
+                            android:text="Save Change"
+                            android:textSize="22sp" />
+
+                        <Button
+                            android:id="@+id/button_savechange5"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="savechange5"
+                            android:text="Save Change"
+                            android:textSize="22sp" />
+
+                        <Button
+                            android:id="@+id/button_savechange6"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="savechange6"
+                            android:text="Save Change"
+                            android:textSize="22sp" />
+
+                        <Button
+                            android:id="@+id/button_savechange7"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="savechange7"
+                            android:text="Save Change"
+                            android:textSize="22sp" />
+
+                        <Button
+                            android:id="@+id/button_savechange8"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="savechange8"
+                            android:text="Save Change"
+                            android:textSize="22sp" />
+
+                        <Button
+                            android:id="@+id/button_savechange9"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="savechange9"
+                            android:text="Save Change"
+                            android:textSize="22sp" />
+
+                        <Button
+                            android:id="@+id/button_savechange10"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="savechange10"
+                            android:text="Save Change"
+                            android:textSize="22sp" />
+
+                        <Button
+                            android:id="@+id/button_savechange11"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="savechange11"
+                            android:text="Save Change"
+                            android:textSize="22sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Account Management"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.561" />
+
+        <Button
+            android:id="@+id/button_registerstaffaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addnewfood"
+            android:text="Add New Food"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.682"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.574" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

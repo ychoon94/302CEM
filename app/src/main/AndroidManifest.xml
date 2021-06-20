@@ -17,15 +17,21 @@
         <activity
             android:name=".admin.AccountActivity"
             android:screenOrientation="landscape">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".admin.AdminActivity"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".admin.AdminActivity"
-            android:screenOrientation="landscape" />
         <activity
             android:name=".kitchen.KitchenActivity_kitchenstaff"
             android:screenOrientation="landscape">
