@@ -9,19 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmileyRestaurant">
-        <activity android:name=".admin.RegisterAccountActivity"
+        <activity android:name=".admin.AddNewMenuActivity"
             android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".admin.RegisterAccountActivity"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".admin.UpdateMenuActivity"
             android:screenOrientation="landscape" />
         <activity
             android:name=".admin.AccountActivity"
             android:screenOrientation="landscape">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".admin.AdminActivity"
