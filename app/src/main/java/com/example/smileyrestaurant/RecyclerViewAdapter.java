@@ -34,7 +34,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.kitchen_list_item, parent, false);
         MyViewHolder holder = new MyViewHolder(view);
-
         return holder;
     }
 
