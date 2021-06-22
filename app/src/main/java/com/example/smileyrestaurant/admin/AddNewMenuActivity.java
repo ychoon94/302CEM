@@ -11,6 +11,8 @@ import android.widget.Spinner;
 import com.example.smileyrestaurant.R;
 import com.example.smileyrestaurant.databinding.ActivityAddNewMenuBinding;
 import com.example.smileyrestaurant.databinding.ActivityUpdateMenuBinding;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +20,8 @@ import java.util.List;
 public class AddNewMenuActivity extends AppCompatActivity {
 
     ActivityAddNewMenuBinding mActivityAddNewMenu;
+
+    private DatabaseReference mDatabase;
 
     Spinner spinner;
 
@@ -29,6 +33,8 @@ public class AddNewMenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_new_menu);
 
         mActivityAddNewMenu = DataBindingUtil.setContentView(this, R.layout.activity_add_new_menu);
+
+        mDatabase = FirebaseDatabase.getInstance().getReference();
 
         spinner = findViewById(R.id.spinner_menuvisibility);
 
@@ -44,5 +50,8 @@ public class AddNewMenuActivity extends AppCompatActivity {
     }
 
     public void savenewmenuitem(View view) {
+        mDatabase.child(mActivityAddNewMenu.editTextFoodid.getText().toString()).child("name").setValue(mActivityAddNewMenu.editTextFoodname.getText().toString());
+        mDatabase.child(mActivityAddNewMenu.editTextFoodid.getText().toString()).child("price").setValue(mActivityAddNewMenu.textViewFoodpriceText.getText().toString());
+        mDatabase.child(mActivityAddNewMenu.editTextFoodid.getText().toString()).child("status").setValue(mActivityAddNewMenu.spinnerMenuvisibility.getSelectedItem().toString());
     }
 }
