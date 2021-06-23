@@ -32,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        db = FirebaseFirestore.getInstance(); //retrieve data
+        db = FirebaseFirestore.getInstance(); //store data
 
         mLoginButton = findViewById(R.id.login_button);
         mUsernameField = findViewById(R.id.username_edit_text);
@@ -47,6 +47,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        //Flow of the login
         mLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
