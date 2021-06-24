@@ -28,7 +28,7 @@ import static android.view.View.GONE;
 public class FoodMenuActivity extends AppCompatActivity {
 
     private ActivityFoodMenuBinding mActivityFoodMenuBinding;
-    SharedPreferences mSharedPreferences;
+//    SharedPreferences mSharedPreferences;
     private String tablename;
     private String ordernumber;
 
