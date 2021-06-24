@@ -28,6 +28,7 @@ import static android.view.View.GONE;
 public class FoodMenuActivity extends AppCompatActivity {
 
     private ActivityFoodMenuBinding mActivityFoodMenuBinding;
+//    private ActivityFoodMenuBinding mActivityFoodMenuBinding;
 //    SharedPreferences mSharedPreferences;
     private String tablename;
     private String ordernumber;
@@ -82,14 +83,15 @@ public class FoodMenuActivity extends AppCompatActivity {
                 }
                 else {
                     for (DataSnapshot data : task.getResult().getChildren()) {
+                        if (data.getKey().equals("name")) {
+                            String foodname = data.getValue().toString();
+                            mActivityFoodMenuBinding.buttonFood1.setText(foodname);
+                        }
+                        if (data.getKey().equals("price")) {
+                            price1 = data.getValue().toString();
+                        }
                         if (data.getKey().equals("visible")){
-                            if (data.getKey().equals("name")) {
-                                String foodname = data.getValue().toString();
-                                mActivityFoodMenuBinding.buttonFood1.setText(foodname);
-                            }
-                            if (data.getKey().equals("price")) {
-                                price1 = data.getValue().toString();
-                            }
+                            mActivityFoodMenuBinding.buttonFood1.setVisibility(View.VISIBLE);
                         }else if (data.getKey().equals("hide") || data.getKey().equals("remove")){
                             mActivityFoodMenuBinding.buttonFood1.setVisibility(GONE);
                         }
@@ -109,14 +111,15 @@ public class FoodMenuActivity extends AppCompatActivity {
                 }
                 else {
                     for (DataSnapshot data : task.getResult().getChildren()) {
+                        if (data.getKey().equals("name")) {
+                            String foodname = data.getValue().toString();
+                            mActivityFoodMenuBinding.buttonFood2.setText(foodname);
+                        }
+                        if (data.getKey().equals("price")) {
+                            price2 = data.getValue().toString();
+                        }
                         if (data.getKey().equals("visible")){
-                            if (data.getKey().equals("name")) {
-                                String foodname = data.getValue().toString();
-                                mActivityFoodMenuBinding.buttonFood2.setText(foodname);
-                            }
-                            if (data.getKey().equals("price")) {
-                                price2 = data.getValue().toString();
-                            }
+                            mActivityFoodMenuBinding.buttonFood2.setVisibility(View.VISIBLE);
                         }else if (data.getKey().equals("hide") || data.getKey().equals("remove")){
                             mActivityFoodMenuBinding.buttonFood2.setVisibility(GONE);
                         }
@@ -136,14 +139,15 @@ public class FoodMenuActivity extends AppCompatActivity {
                 }
                 else {
                     for (DataSnapshot data : task.getResult().getChildren()) {
+                        if (data.getKey().equals("name")) {
+                            String foodname = data.getValue().toString();
+                            mActivityFoodMenuBinding.buttonFood3.setText(foodname);
+                        }
+                        if (data.getKey().equals("price")) {
+                            price3 = data.getValue().toString();
+                        }
                         if (data.getKey().equals("visible")){
-                            if (data.getKey().equals("name")) {
-                                String foodname = data.getValue().toString();
-                                mActivityFoodMenuBinding.buttonFood3.setText(foodname);
-                            }
-                            if (data.getKey().equals("price")) {
-                                price3 = data.getValue().toString();
-                            }
+                            mActivityFoodMenuBinding.buttonFood3.setVisibility(View.VISIBLE);
                         }else if (data.getKey().equals("hide") || data.getKey().equals("remove")){
                             mActivityFoodMenuBinding.buttonFood3.setVisibility(GONE);
                         }
@@ -163,14 +167,15 @@ public class FoodMenuActivity extends AppCompatActivity {
                 }
                 else {
                     for (DataSnapshot data : task.getResult().getChildren()) {
+                        if (data.getKey().equals("name")) {
+                            String foodname = data.getValue().toString();
+                            mActivityFoodMenuBinding.buttonFood4.setText(foodname);
+                        }
+                        if (data.getKey().equals("price")) {
+                            price4 = data.getValue().toString();
+                        }
                         if (data.getKey().equals("visible")){
-                            if (data.getKey().equals("name")) {
-                                String foodname = data.getValue().toString();
-                                mActivityFoodMenuBinding.buttonFood4.setText(foodname);
-                            }
-                            if (data.getKey().equals("price")) {
-                                price4 = data.getValue().toString();
-                            }
+                            mActivityFoodMenuBinding.buttonFood4.setVisibility(View.VISIBLE);
                         }else if (data.getKey().equals("hide") || data.getKey().equals("remove")){
                             mActivityFoodMenuBinding.buttonFood4.setVisibility(GONE);
                         }
@@ -190,14 +195,15 @@ public class FoodMenuActivity extends AppCompatActivity {
                 }
                 else {
                     for (DataSnapshot data : task.getResult().getChildren()) {
+                        if (data.getKey().equals("name")) {
+                            String foodname = data.getValue().toString();
+                            mActivityFoodMenuBinding.buttonFood5.setText(foodname);
+                        }
+                        if (data.getKey().equals("price")) {
+                            price5 = data.getValue().toString();
+                        }
                         if (data.getKey().equals("visible")){
-                            if (data.getKey().equals("name")) {
-                                String foodname = data.getValue().toString();
-                                mActivityFoodMenuBinding.buttonFood5.setText(foodname);
-                            }
-                            if (data.getKey().equals("price")) {
-                                price5 = data.getValue().toString();
-                            }
+                            mActivityFoodMenuBinding.buttonFood5.setVisibility(View.VISIBLE);
                         }else if (data.getKey().equals("hide") || data.getKey().equals("remove")){
                             mActivityFoodMenuBinding.buttonFood5.setVisibility(GONE);
                         }
@@ -217,14 +223,15 @@ public class FoodMenuActivity extends AppCompatActivity {
                 }
                 else {
                     for (DataSnapshot data : task.getResult().getChildren()) {
+                        if (data.getKey().equals("name")) {
+                            String foodname = data.getValue().toString();
+                            mActivityFoodMenuBinding.buttonFood6.setText(foodname);
+                        }
+                        if (data.getKey().equals("price")) {
+                            price6 = data.getValue().toString();
+                        }
                         if (data.getKey().equals("visible")){
-                            if (data.getKey().equals("name")) {
-                                String foodname = data.getValue().toString();
-                                mActivityFoodMenuBinding.buttonFood6.setText(foodname);
-                            }
-                            if (data.getKey().equals("price")) {
-                                price6 = data.getValue().toString();
-                            }
+                            mActivityFoodMenuBinding.buttonFood6.setVisibility(View.VISIBLE);
                         }else if (data.getKey().equals("hide") || data.getKey().equals("remove")){
                             mActivityFoodMenuBinding.buttonFood6.setVisibility(GONE);
                         }
@@ -244,14 +251,15 @@ public class FoodMenuActivity extends AppCompatActivity {
                 }
                 else {
                     for (DataSnapshot data : task.getResult().getChildren()) {
+                        if (data.getKey().equals("name")) {
+                            String foodname = data.getValue().toString();
+                            mActivityFoodMenuBinding.buttonFood7.setText(foodname);
+                        }
+                        if (data.getKey().equals("price")) {
+                            price7 = data.getValue().toString();
+                        }
                         if (data.getKey().equals("visible")){
-                            if (data.getKey().equals("name")) {
-                                String foodname = data.getValue().toString();
-                                mActivityFoodMenuBinding.buttonFood7.setText(foodname);
-                            }
-                            if (data.getKey().equals("price")) {
-                                price7 = data.getValue().toString();
-                            }
+                            mActivityFoodMenuBinding.buttonFood7.setVisibility(View.VISIBLE);
                         }else if (data.getKey().equals("hide") || data.getKey().equals("remove")){
                             mActivityFoodMenuBinding.buttonFood7.setVisibility(GONE);
                         }
@@ -271,14 +279,15 @@ public class FoodMenuActivity extends AppCompatActivity {
                 }
                 else {
                     for (DataSnapshot data : task.getResult().getChildren()) {
+                        if (data.getKey().equals("name")) {
+                            String foodname = data.getValue().toString();
+                            mActivityFoodMenuBinding.buttonFood8.setText(foodname);
+                        }
+                        if (data.getKey().equals("price")) {
+                            price8 = data.getValue().toString();
+                        }
                         if (data.getKey().equals("visible")){
-                            if (data.getKey().equals("name")) {
-                                String foodname = data.getValue().toString();
-                                mActivityFoodMenuBinding.buttonFood8.setText(foodname);
-                            }
-                            if (data.getKey().equals("price")) {
-                                price8 = data.getValue().toString();
-                            }
+                            mActivityFoodMenuBinding.buttonFood8.setVisibility(View.VISIBLE);
                         }else if (data.getKey().equals("hide") || data.getKey().equals("remove")){
                             mActivityFoodMenuBinding.buttonFood8.setVisibility(GONE);
                         }
