@@ -44,7 +44,6 @@ public class ChooseTableActivity extends AppCompatActivity {
             ordernumber = 0;
         }
         ordernumber = ordernumber + 1;
-//        ordernumber = ordernumber + 1;
 
         //shared preferences for the ordernumber
         mSharedPreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);

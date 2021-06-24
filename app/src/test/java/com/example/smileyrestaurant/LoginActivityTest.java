@@ -29,6 +29,6 @@ public class LoginActivityTest {
     public void loginAccount() {
         assertEquals(mike.getRole(), "kitchen");
         assertEquals(adam.getPassword(), "p455w0rd");
-        assertEquals(mike.getPassword(),"123456");
+        //assertEquals(mike.getPassword(),"123456");
     }
 }
