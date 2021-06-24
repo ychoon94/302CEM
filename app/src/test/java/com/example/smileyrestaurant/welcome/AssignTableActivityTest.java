@@ -38,7 +38,7 @@ public class AssignTableActivityTest {
     public void menu1() {
         map.replace("Table 1", "0", "1");
         assertEquals(map.get("Table 1"), "1");
-        assertEquals(map.get("Table 1"), "0");
+        //assertEquals(map.get("Table 1"), "0");
     }
 
     @Test
