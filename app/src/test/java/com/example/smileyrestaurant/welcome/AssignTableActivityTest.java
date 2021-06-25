@@ -1,6 +1,5 @@
 package com.example.smileyrestaurant.welcome;
 
-import com.example.smileyrestaurant.databinding.ActivityChooseTableBinding;
 import com.example.smileyrestaurant.model.Staff;
 
 import org.junit.Before;
