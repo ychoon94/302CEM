@@ -65,20 +65,6 @@ public class RegisterAccountActivity extends AppCompatActivity {
         newstaff.setRole(mActivityRegisterAccountBinding.spinnerRegisterstaffrole.getSelectedItem().toString());
         db.collection(COLLECTION_NAME_KEY).document(mActivityRegisterAccountBinding.editTextTextPersonName.getText().toString()).set(newstaff);
 
-//        DocumentReference docRefNewUser = db.collection(COLLECTION_NAME_KEY).document();
-//        docRefNewUser.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-//            @Override
-//            public void onSuccess(DocumentSnapshot documentSnapshot) {
-//                if (!documentSnapshot.exists()){
-//                    Staff newstaff = new Staff();
-//                    newstaff.setUsername(mActivityRegisterAccountBinding.editTextTextPersonName.getText().toString());
-//                    newstaff.setPassword(mActivityRegisterAccountBinding.editTextTextPassword.getText().toString());
-//                    newstaff.setRole(mActivityRegisterAccountBinding.spinnerRegisterstaffrole.getSelectedItem().toString());
-//                    db.collection(COLLECTION_NAME_KEY).document(mActivityRegisterAccountBinding.editTextTextPersonName.getText().toString()).set(newstaff);
-//                }
-//            }
-//        });
-
         Intent goback = new Intent(RegisterAccountActivity.this, AccountActivity.class);
         startActivity(goback);
         mActivityRegisterAccountBinding.editTextTextPassword.setText("");
