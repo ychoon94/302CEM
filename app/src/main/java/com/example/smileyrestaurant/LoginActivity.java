@@ -1,7 +1,5 @@
 package com.example.smileyrestaurant;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -64,10 +62,12 @@ public class LoginActivity extends AppCompatActivity {
                                     Toast.makeText(getApplicationContext(), "Welcome to Smiley Restaurant:)", Toast.LENGTH_SHORT).show();
                                     Intent main = new Intent(LoginActivity.this, MainActivity.class);
                                     startActivity(main);
+                                    //Show Password Mismatching text if the user input the wrong password
                                 } else {
                                     Toast.makeText(LoginActivity.this, "Password Mismatching.", Toast.LENGTH_SHORT).show();
                                 }
 
+                                //Show Please check your username if the user input the wrong username
                             } else {
                                 Toast.makeText(getApplicationContext(), "Please check your username! ", Toast.LENGTH_SHORT).show();
                             }
