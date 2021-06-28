@@ -51,6 +51,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         db = FirebaseFirestore.getInstance();
 
+        // Flow to create account for each staff
         mRegisterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -101,7 +102,7 @@ public class RegisterActivity extends AppCompatActivity {
                         }
                     });
                 } else {
-                    Toast.makeText(getApplicationContext(), "Make All field Filled", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Make All field Filled", Toast.LENGTH_SHORT).show(); //set error test
                 }
             }
         });
