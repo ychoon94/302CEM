@@ -80,6 +80,5 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             foodItem = itemView.findViewById(R.id.food_item);
             symbolX = itemView.findViewById(R.id.symbol_x);
         }
-
     }
 }
