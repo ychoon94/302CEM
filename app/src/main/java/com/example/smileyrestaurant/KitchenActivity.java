@@ -30,7 +30,6 @@ public class KitchenActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager layoutManager;
     private ImageView btnReady;
 
-    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
