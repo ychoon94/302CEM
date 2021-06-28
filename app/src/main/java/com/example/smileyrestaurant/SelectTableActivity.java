@@ -37,6 +37,7 @@ public class SelectTableActivity extends AppCompatActivity {
             }
         });
 
+        // Set intent for each of the button to food selection screen
         mOneIV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
