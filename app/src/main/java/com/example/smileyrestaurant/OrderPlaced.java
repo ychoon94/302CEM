@@ -44,7 +44,6 @@ public class OrderPlaced {
         return timeOrdered;
     }
 
-
     public void setTimeOrdered(String timeOrdered) {
         this.timeOrdered = timeOrdered;
         Date orderTime = new Date();
