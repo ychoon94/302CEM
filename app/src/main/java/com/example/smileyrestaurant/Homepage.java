@@ -8,8 +8,8 @@ import android.view.View;
 import android.widget.Button;
 
 public class Homepage extends AppCompatActivity {
-//function for add order/kitchen button
 
+    //function for add order/kitchen button
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
