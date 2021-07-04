@@ -24,7 +24,6 @@ public class KitchenActivity extends AppCompatActivity {
 
     private static final String TAG = "Kitchen";
     List<OrderPlaced> orderPlacedList = new ArrayList<OrderPlaced>();
-
     private RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
