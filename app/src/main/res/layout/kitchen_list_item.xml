@@ -6,7 +6,6 @@
     android:orientation="horizontal"
     android:id="@+id/orderPlacedLayout">
 
-
     <ImageView
         android:id="@+id/list_background"
         android:layout_width="1252dp"
