@@ -11,7 +11,6 @@ public class OrderPlaced {
     private int totalPlacedQuantity;
     private String foodItem;
 
-    
     public OrderPlaced(int id, String timeOrdered, int tableNo, int totalNoPlaced, int totalPlacedQuantity, String foodItem) {
         this.id = id;
         this.timeOrdered = timeOrdered;
