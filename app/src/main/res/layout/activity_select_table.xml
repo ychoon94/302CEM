@@ -33,7 +33,7 @@
         app:srcCompat="@drawable/line" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/restaurantName_textView"
         android:layout_width="824dp"
         android:layout_height="88dp"
         android:layout_marginTop="28dp"
