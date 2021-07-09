@@ -28,6 +28,7 @@ import static android.view.View.GONE;
 public class FoodMenuActivity extends AppCompatActivity {
 
     private ActivityFoodMenuBinding mActivityFoodMenuBinding;
+//    private ActivityFoodMenuBinding mActivityFoodMenuBinding;
 //    SharedPreferences mSharedPreferences;
     private String tablename;
     private String ordernumber;
@@ -89,6 +90,11 @@ public class FoodMenuActivity extends AppCompatActivity {
                         if (data.getKey().equals("price")) {
                             price1 = data.getValue().toString();
                         }
+                        if (data.getKey().equals("visible")){
+                            mActivityFoodMenuBinding.buttonFood1.setVisibility(View.VISIBLE);
+                        }else if (data.getKey().equals("hide") || data.getKey().equals("remove")){
+                            mActivityFoodMenuBinding.buttonFood1.setVisibility(GONE);
+                        }
                     }
 
 //                    mActivityFoodMenuBinding.buttonFood1.setText(task.getResult().getValue().toString());
@@ -111,6 +117,11 @@ public class FoodMenuActivity extends AppCompatActivity {
                         }
                         if (data.getKey().equals("price")) {
                             price2 = data.getValue().toString();
+                        }
+                        if (data.getKey().equals("visible")){
+                            mActivityFoodMenuBinding.buttonFood2.setVisibility(View.VISIBLE);
+                        }else if (data.getKey().equals("hide") || data.getKey().equals("remove")){
+                            mActivityFoodMenuBinding.buttonFood2.setVisibility(GONE);
                         }
                     }
 
@@ -135,6 +146,11 @@ public class FoodMenuActivity extends AppCompatActivity {
                         if (data.getKey().equals("price")) {
                             price3 = data.getValue().toString();
                         }
+                        if (data.getKey().equals("visible")){
+                            mActivityFoodMenuBinding.buttonFood3.setVisibility(View.VISIBLE);
+                        }else if (data.getKey().equals("hide") || data.getKey().equals("remove")){
+                            mActivityFoodMenuBinding.buttonFood3.setVisibility(GONE);
+                        }
                     }
 
 //                    mActivityFoodMenuBinding.buttonFood1.setText(task.getResult().getValue().toString());
@@ -157,6 +173,11 @@ public class FoodMenuActivity extends AppCompatActivity {
                         }
                         if (data.getKey().equals("price")) {
                             price4 = data.getValue().toString();
+                        }
+                        if (data.getKey().equals("visible")){
+                            mActivityFoodMenuBinding.buttonFood4.setVisibility(View.VISIBLE);
+                        }else if (data.getKey().equals("hide") || data.getKey().equals("remove")){
+                            mActivityFoodMenuBinding.buttonFood4.setVisibility(GONE);
                         }
                     }
 
@@ -181,6 +202,11 @@ public class FoodMenuActivity extends AppCompatActivity {
                         if (data.getKey().equals("price")) {
                             price5 = data.getValue().toString();
                         }
+                        if (data.getKey().equals("visible")){
+                            mActivityFoodMenuBinding.buttonFood5.setVisibility(View.VISIBLE);
+                        }else if (data.getKey().equals("hide") || data.getKey().equals("remove")){
+                            mActivityFoodMenuBinding.buttonFood5.setVisibility(GONE);
+                        }
                     }
 
 //                    mActivityFoodMenuBinding.buttonFood1.setText(task.getResult().getValue().toString());
@@ -203,6 +229,11 @@ public class FoodMenuActivity extends AppCompatActivity {
                         }
                         if (data.getKey().equals("price")) {
                             price6 = data.getValue().toString();
+                        }
+                        if (data.getKey().equals("visible")){
+                            mActivityFoodMenuBinding.buttonFood6.setVisibility(View.VISIBLE);
+                        }else if (data.getKey().equals("hide") || data.getKey().equals("remove")){
+                            mActivityFoodMenuBinding.buttonFood6.setVisibility(GONE);
                         }
                     }
 
@@ -227,6 +258,11 @@ public class FoodMenuActivity extends AppCompatActivity {
                         if (data.getKey().equals("price")) {
                             price7 = data.getValue().toString();
                         }
+                        if (data.getKey().equals("visible")){
+                            mActivityFoodMenuBinding.buttonFood7.setVisibility(View.VISIBLE);
+                        }else if (data.getKey().equals("hide") || data.getKey().equals("remove")){
+                            mActivityFoodMenuBinding.buttonFood7.setVisibility(GONE);
+                        }
                     }
 
 //                    mActivityFoodMenuBinding.buttonFood1.setText(task.getResult().getValue().toString());
@@ -249,6 +285,11 @@ public class FoodMenuActivity extends AppCompatActivity {
                         }
                         if (data.getKey().equals("price")) {
                             price8 = data.getValue().toString();
+                        }
+                        if (data.getKey().equals("visible")){
+                            mActivityFoodMenuBinding.buttonFood8.setVisibility(View.VISIBLE);
+                        }else if (data.getKey().equals("hide") || data.getKey().equals("remove")){
+                            mActivityFoodMenuBinding.buttonFood8.setVisibility(GONE);
                         }
                     }
 
